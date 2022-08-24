@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+    margin: auto;
+    border-bottom: #74767e 1px solid;
+    display: flex;
+    height: 80px;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    color: #62646a;
+}
+#search {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -35px;
+    font-weight: 600;
+    height: 30px;
+    width: 15px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    fill: white;
+}
+#query {
+    padding: 3px;
+    width: 400px;
+    font-size: 16px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid;
+}
+#navbar > input,button{
+    height: 30px;
+}
+#navbar > img {
+    height: 35%;
+}
+#signup {
+    background-color: white;
+    font-weight: 600;
+    color: #1dbf73;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #1dbf73;
+    font-size: 15px;
+}
+#signup:hover {
+    background-color: #1dbf73;
+    color: white;
+    transform: scale(1.1);
+    transition: transform .1s
+}
+#dropdown > p:hover {
+    border-bottom: #1dbf73 3px solid;
+}
+
+#dropdown {
+    border-bottom: #74767e 1px solid;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    color: #74767e;
+    height: 45px;
+    align-items: center;
+}
