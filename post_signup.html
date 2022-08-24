@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Signup</title>
+    <link rel="stylesheet" href="./style/login_card.css">
+    <style>
+        #signupCard {
+            height: 395px;
+        }
+        #signin > p {
+            margin-top: -5px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 10px;
+            text-align: left;
+            font-size: 13px;
+        }
+        #forgot_pw {
+            font-size: 12px;
+            padding-top: 5px;
+            padding-bottom: 25px;
+            color: rgb(165, 165, 165);
+        }
+    </style>
+</head>
+<body>
+    <div id="signupCard">
+        <div id="form_inp">
+            <h2>Join Fiverr</h2>
+            <form action="" id="signin">
+                <input type="text" id="email" placeholder="Email">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="pw" placeholder="Set Password"> </br>
+                <p>8 characters or longer. Combine upper and lowercase letters and numbers.</p>
+                <input type="submit" value="Join" onclick="sign_up()">
+            </form>
+        </div>
+
+
+        <div id="forgot_pw">
+            By joining, you agree to Fiverr’s Terms of Service,
+            as well as to receive occasional emails from us.    
+        </div>
+
+        <div id="last">
+            <p>Already a member? <u style="color:#1dbf73">Sign In</u></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./script/signup_login.js"></script>

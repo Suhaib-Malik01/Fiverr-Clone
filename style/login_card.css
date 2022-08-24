@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#form_inp > h2 {
+  margin-top: 1px;
+  color: #404145;
+  margin-bottom: 25px;
+}
+#form_inp > h5 {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+}
+#form_inp > h5:before,h5:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #aeaeaf;;
+  margin: 5px;
+}
+#signupCard {
+  margin: auto;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  width: 330px;
+  height: 520px;
+  text-align: center;
+  padding: 20px;
+}
+.fb {
+  margin: auto;
+  width: 90%;
+  padding: 15px;
+  background-color: #4267b2;
+  color: white;
+  fill: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 30px;
+  padding-left: 20px;
+}
+.google {
+  margin: auto;
+  width: 90%;
+  padding: 15px;
+  background-color: white;
+  border: rgb(197, 197, 197) 1px solid;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 30px;
+  padding-left: 20px;
+}
+.apple {
+  margin: auto;
+  width: 90%;
+  padding: 15px;
+  background-color: white;
+  border: rgb(197, 197, 197) 1px solid;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 30px;
+  padding-left: 20px;
+}
+#signin > input {
+  width: 88%;
+  height: 30px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+#signin > input:last-child {
+  background-color: #1dbf73;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #1dbf73;
+  height: 35px;
+  border-radius: 5px;
+}
+
+#forgot_pw {
+  padding: 0 20px;
+  display: flex;
+  gap: 44px;
+  font-size: 15px;
+}
+#last {
+  border-top: #a4a5a8 1px solid;
+  font-size: 15px;
+}
