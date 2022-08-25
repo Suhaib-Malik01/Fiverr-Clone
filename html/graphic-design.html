@@ -12,55 +12,55 @@
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
             @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
-
             @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
         </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
         <script src="https://kit.fontawesome.com/fa5117c01c.js" crossorigin="anonymous"></script>
-        <title>Home</title>
+        <title>Graphic Design Page</title>
     </head>
 
     <body onload="show()">
+
+        <link rel="stylesheet" href="../style/navbar.css">
+        <div id="nav"></div>
+
+
         <!-- ********************************************************************************* head section ********************************************************************************* -->
         <div id="head">
             <img class="img-head" src="../graphic design img/head-img.webp" alt="" />
-            <h3 class="text">
+            <p class="text">
                 Graphics Design <br />
                 <small>Designs to make you stand out. <br /></small>
-                <button style="font-size: 20px">
-                    <i class="fa fa-play-circle"></i> How Fiverr Works
-                </button>
-            </h3>
-        </div>
+                <a class="popup-video"
+                        href="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd_nl/v1/video-attachments/generic_asset/asset/ab0907217c9f9a2c1d2eee677beb7619-1626082923646/how_fiverr_works">
+                        <button class="btn-head"> <i class="fa fa-play-circle"></i> How
+                        Fiverr Works </button> </a>
 
+               
+
+            </p>
+        </div>
+        <script>
+            $( function ()
+            {
+                $( '.popup-video' ).magnificPopup( {
+                    disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
+                    fixedContentPos: false
+                } );
+            } );
+        </script>
         <!-- ********************************************************************************* mini scroller section ********************************************************************************* -->
 
-        <h2 class="mini-scroller-h2">Most popular in Graphics & Design</h2>
-        <div class="mini-scroller">
-            <div class="slide">
-                <img class="img-slide" src="../graphic design img/logo-1.webp" alt="Minimalist Logo Design" />
-                <h4 class="text-slide">Minimalist Logo Design &rarr;</h4>
-            </div>
-            <div class="slide">
-                <img class="img-slide" src="../graphic design img/logo-2.webp" alt="Minimalist Logo Design" />
-                <h4 class="text-slide">Architecture& Interior Design &rarr;</h4>
-            </div>
-            <div class="slide">
-                <img class="img-slide" src="../graphic design img/logo-3.webp" alt="Minimalist Logo Design" />
-                <h4 class="text-slide">Image Editing &rarr;</h4>
-            </div>
-            <div class="slide">
-                <img class="img-slide" src="../graphic design img/logo-4.webp" alt="Minimalist Logo Design" />
-                <h4 class="text-slide">NFT Art &rarr;</h4>
-            </div>
-            <div class="slide">
-                <img class="img-slide" src="../graphic design img/logo-5.webp" alt="Minimalist Logo Design" />
-                <h4 class="text-slide">T-Shirts & Merchandi &rarr;</h4>
-            </div>
-        </div>
-
-
+        <div id="small-slider"></div>
 
 
         <!-- ********************************************************************************* grafic-design section ********************************************************************************* -->
@@ -306,6 +306,10 @@
                 </div>
             </div>
         </div>
+
+
+        <link rel="stylesheet" href="../style/footer.css">
+        <div id="footer"></div>
     </body>
 
 </html>
@@ -314,4 +318,19 @@
     {
         $( "#graphic_FAQ" ).load( "graphic-design-faq.html" );
     } );
+    $( function ()
+    {
+        $( "#small-slider" ).load( "small-slider-graphic-design.html" );
+    } );
+</script>
+
+
+<script type="module">
+    import navbar from "../components/navbar_exp.js";
+    document.getElementById( "nav" ).innerHTML = navbar();
+</script>
+
+<script type="module">
+    import { footer } from "../script/footer.js";
+    document.getElementById( "footer" ).innerHTML = footer();
 </script>

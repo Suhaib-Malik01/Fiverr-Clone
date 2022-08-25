@@ -20,7 +20,6 @@ function navbar_imp () {
         <h4>Sign In</h4>
         <button id="signup">Join</button>
     </div>
-
     <div class="dropdown">
         <ul>
             <li class="gd">Graphics & Design
