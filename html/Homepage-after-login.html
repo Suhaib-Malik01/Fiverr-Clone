@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style/login-homepage.css">
-    
+
 </head>
 
 <body>
@@ -64,24 +64,41 @@
                 <p>Here's what <i>you</i> need for developing your game</p>
 
             </div>
-            <div id="crousel">
-                <div>
+            <span id="left-button"></span>
+            <section id="crousel">
+                <div class="first-crousel">
                     <img src="https://fiverr-res.cloudinary.com/image/upload/f_png,q_auto/v1/attachments/generic_asset/asset/c056c874b3b9af09781cdab02f479239-1651142936268/Programming%20_%20Tech%20-%20Game%20Development.svg"
                         alt="">
                     <p>Game Development</p>
                 </div>
-                <div>
+                <div class="first-crousel">
                     <img src="https://fiverr-res.cloudinary.com/image/upload/f_png,q_auto/v1/attachments/generic_asset/asset/c056c874b3b9af09781cdab02f479239-1651142936257/Graphics%20_%20Design%20-%20Game%20Art.svg"
                         alt="">
                     <p>Game Art</p>
                 </div>
-                <div>
+                <div class="first-crousel">
                     <img src="https://fiverr-res.cloudinary.com/image/upload/f_png,q_auto/v1/attachments/generic_asset/asset/65f721973b3f98727ecc908498f1f2d9-1651386017284/Character%20Design_2249.svg"
                         alt="">
                     <p>Character Design</p>
                 </div>
-                <button id="button-crousel">></button>
-            </div>
+                <div class="first-crousel">
+                    <img src="https://fiverr-res.cloudinary.com/image/upload/f_png,q_auto/v1/attachments/generic_asset/asset/c056c874b3b9af09781cdab02f479239-1651142936257/Graphics%20_%20Design%20-%20Game%20Art.svg"
+                        alt="">
+                    <p>Game Art</p>
+                </div>
+                <div class="first-crousel">
+                    <img src="https://fiverr-res.cloudinary.com/image/upload/f_png,q_auto/v1/attachments/generic_asset/asset/c056c874b3b9af09781cdab02f479239-1651142936257/Graphics%20_%20Design%20-%20Game%20Art.svg"
+                        alt="">
+                    <p>Game Art</p>
+                </div>
+                <div class="first-crousel">
+                    <img src="https://fiverr-res.cloudinary.com/image/upload/f_png,q_auto/v1/attachments/generic_asset/asset/c056c874b3b9af09781cdab02f479239-1651142936257/Graphics%20_%20Design%20-%20Game%20Art.svg"
+                        alt="">
+                    <p>Game Art</p>
+                </div>
+
+            </section>
+            <button id="button-crousel">></button>
 
         </div>
     </div>
@@ -94,14 +111,1306 @@
                         </path>
                     </svg></span></h3>
             <div>
-                <button><</button>
-                <button>></button>
+                <button class="pr-btn">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEX////7+/v+/v78/Pz9/f0BAQEAAADq6ur29vaBgYGkpKRcXFzt7e2YmJiwsLCfn59WVlZNTU2Pj4+JiYloaGi2trY5OTliYmKqqqpGRkZ7e3vBwcESEhLOzs7k5OQyMjIlJSVzc3PPogeXAAAIa0lEQVR4nL2ciZKjNhCGhcA2O2PP4Tmzu9lk3v8lAwKD1Jd+CSauylQtAqn19aFuCeK8c65rxr9t68a/3fDHN+vlbroc/ja0Mb7c+rWxXRp91Ni1pMOpkY9DZYo60mTqpGdsgcsmGf6ZvYuLGj3TUlEBFI3Z+P9wijWIPGNz0hpFTqxRZcs4kXG2cuoiyURO0whqh8Qv5ss6JxW1eHkDJzpOyb2CA3RGYyxwbE/sGYMTLJMlagUnwW4hTorJTJctexI4ZcGPlzVOeb+L3R32VQvielmJf1ZwVGOBzEkOqCqnm6XjnKxhiziZcVDmhNoTsN7Ja7DZYSdxApYPK47DnBQDHS+bnGCZWK4S+R1u44n3AXrOQBQv+8JnFiHQYac5R9HYzOnkxQpOflA9h2Fd8/b40DuMU2L6tDHRB1WWzElZ0vyv4/D7/YBxousd7ktZG485/X04ht+bmasAnDqL0wBRUL8agt6Px8PxMEj2GBHWlk6DU9a/Yflb1w8yhd/ICl9bijlNyQuzcdlNzseZ1CDVnWuhZ0ri7OoAMKfh93smNbPC12DTVx1zfknP2rTc3TGS6g7iVLiGhScbY1osyPv2dVTgqL7D5IOG36GFtWMOMMyjLPd9JazE+LQ+U7iGNbfLAKeosX8Ntj6zeii3J5ETL4QsPbPLzn2krCzX4pxQUeXBxdw3NDJWlZyMxbA8HXHuntjVxtxXCCti7qtzGp9IWX1GGmS5L5yQEYEBv2OiJqw+MU6oSsMzhZyCBikrF+W+8B6Gzmn6oZzWRsZK5QSvd1HsZ4PTafHafGxMWd1JnODcl88jq2c5ELkmYfUQXEblJOS+Iie6waGoX+Y0NjYJq8dJg4q+WYcmp8ZzIOhS0DylrDBO8lrfkGfynORG73vCymuxwOCk+KrFKRPke8Yq6V+I43KQp5wcRUHjk9I4XW4+qF2V+d3cyGyEosA5ja47sDrErJAFVNQHTcjsWOCl/tcuIlaDVBcKXljpmO4kfShxAwle4wXKqoATj0/LONlh7bpiiqJL5XVJa2drejontwIvPW+5KfbMWNmcfJaT2YWYSvIawT8tNepkV2XlTGq3oRGMT0ZHrTs/Ex9kk5RzOn2cDZzWZ5Ioelm7quJ0iwil9kRz39MzyfoU8Hm/izc4oskZy5N67DbaVaTBx+DT1ZzCr4YTlez8TLM+LdEA4qDOyYjjQu7rmueUFRSfGKfbBgevEYBzKUGDp6eU1UqI72Hk9GFvgZec3zV/EVY2J6dx6pyr4MT2M+dRKCvpEDTPKUzSuEvhFPWc5JmuJ6xk1+K5Cp171L+R06F7GCmrR2M25jj0LmCNVziFlTRldTdbRxmn6Ay5lhOZB2UVa9DilAaKHTmFns+UVTEn75IzZMUwFb/jDhA0mLK63PxbCy6MU2Lp+H6EskbenjkxVk6rpZQgL3OyzqWUOjiaR5ozXLOc2NxzhgMHr/gQ4E/C6nNutHIVOjzKSfE7cUk7M1a4fy8lFpD0lJ3f/XlPWZVw8nOJ1RooTL/TUrGY1WFk1RVwmn7ovSXnd5yVzoktDKptwJyUJW2IolGV+lZiI9l7i4J8nNOlrP7J5CrpJAtz37icycWP/j0qvM4dZuOhq6rcN89pbOzfl9L5eDw5kNOtxLJz31iavN+twybq+5fJpHNyivyy3+XfC4wal6AQSH3KMsmTLOEk5yoIp1DK43M35gzYE8ApBM8fJZxaYYNjl3POdElGOS37sqbfwe8gk8ZzkuihnNKzUcaJh6AiezpVcYp8Sb43DF57zlnFib24Lw8b+11BHCcbexcPxSf6krz8HgaQyMhrZMrpxdKduqiX1VL5fLlPOF0xTtQMFE75WkpW7Pm+nlMU6rZxIvba2JxMd1llMlBs5mTKxIJwlhPRM5pcVXESzte25L6UU/8Bc5Jj5tJo35vN6WKBd+LkpywdqDnzAbW37QmLBW7dTGAyKfea5+bJ9v4L6Hfam0e6a5mJsc1JHDwfC+ZG3Z5o2qbZ09SYvNDBOGVzFTIOkPsCa8s92Sir9rtpnI211NSYvKj3A+NkTRJ0dyv37e/pcR9u47KNoJyi/mnja3xcW1ojSOPINEu66D9qOGn2FBrNXAvi9BXXnHtwWkssIwSZJtm8mpyA3Feaux0cs373ZdacsjHk9UGHNQst2oX/quCU0930sznRfDna63E/zVqq3GmiEkuO4/ma09mcavxuesYVf6e4Nv74Hk7DZfNdSPPs4WcFJ3CfC/7+js7Z5kTPpaw8k1uKMaxpTwmnLfm48IwzOFkvV76YNafMCbCnaZwiTqnuNtecGqcG40QbX+Dcl3GyZJobPfJedIZTt1ccnxu9cxonQ6aryWmjjYcLivyGTC9JjbAfJ0GmTG2+dvH9nMb/yr7nvJq1FGAyTB+ZDQ4A9bWilsJjgZ8bbXsyOZXvj0OcZu+D1+Br/CndfjndGgvcspkA5L5TF79MTkruC753Q2SCu3DvO+a+6+X8BofByffRh6y75nQpp2WDAyozusNR5VTod4xTIlNG/rSj59vH0Vv9jjxDZXKoSY6Xb5+R75v7cpmcbE9ykPdvQSYlp6vwOxYLyHfI2KcN58/r5fTdnFrVh7TFMGFrcYLzAsEB8O0WmqbvvN7F+p5lIkHFK5y0/us5STK5fBdUPUgcz89DsfHFRhQlKaWoqdjNNr7KhHEy19NCv7N0R8+Qse8Uc2zN2jzPqYH+R2tl7xJuigXz5YrvFBEb3MLJyS9/I36ncMrrzran0GhwAnPGutzXSsB35lSX09FncpyUtWVrHWxxavTvkCv8Dv2GMsPJO/4dMkdRprttNs5KLLoG23Eczn0d7bBEJiME7ZjT+bxMHYRibmxrbFy8bMvU/gdYHXvoupJnSAAAAABJRU5ErkJggg==" alt="">
+                </button>
+                <button class="pr-btn">
+                    <img src="data:image/png;base64,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" alt="">
+                </button>
             </div>
         </div>
+        <section id="Products">
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg  viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                    alt="">
+                <div class="prs-id">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                        alt="">
+                    <p>mrtranscendence</p>
+                </div>
+                <div class="title">
+                    <p>I will build a professional squarespace website design</p->
+                    <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                            height="16">
+                            <path fill="currentColor"
+                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                            </path>
+                        </svg>
+                        <span>4.8</span>
+                    </p>
+                </div>
+                <div class="pricing">
+                    <div>
+                        <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                            </path>
+                            <path
+                                d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                            </path>
+                            <path
+                                d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                            </path>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Starting From</span>
+                        <span>₹2,456</span>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </section>
     </div>
-    <div id="Products">
+
+    <h2>Because you saved <span>create you a website using duda builder</span> </h2>
+    
+    <section id="Products-2">
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box2">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <span id="left-btn-pr2">
+        <button class="pr-btn2">
+            <img src="https://i.ibb.co/hCXN8LJ/download.png" alt="">
+        </button>
+    </span>
+    <span id="right-btn-pr2">
+        <button class="pr-btn2">
+            <img src="data:image/png;base64,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" alt="">
+        </button>
+    </span>
+    <section id="Products-3">
+
+    </section>
+    <h2>Gigs you may like</h2>
+
+    <section id="Products-4">
+        <div class="product-box4">
+            <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/196670237/original/1462fef106788b1f04f82d11c656c1b8db165666.jpeg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box4">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box4">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box4">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box4">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box4">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box4">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box4">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+
         
-    </div>
+
+    </section>
+    
+    
 </body>
 
 </html>
