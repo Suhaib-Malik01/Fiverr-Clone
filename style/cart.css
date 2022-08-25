@@ -7,18 +7,19 @@
 }
 
 #cartTabs {
-  width: 35%;
+  width: 30%;
+  height: 600px;
+  margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   float: right;
   position: sticky;
 }
 
 .tabs {
+  /* margin: 0 20px; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
-}
-.tabs {
   background-color: #fafafa;
 }
 .tab {
@@ -27,7 +28,8 @@
 }
 .tab.active {
   background-color: white;
-  text-decoration: underline red solid;
+  /* text-decoration: underline red solid; */
+  border-bottom: 1px solid red;
 }
 #tab-content {
   margin: 0 20px;
@@ -37,12 +39,13 @@
   background-color: green;
   color: white;
   padding: 12px;
+  padding-bottom: 10px;
   border: transparent;
   border-radius: 5px;
   display: flex;
   margin: auto;
   justify-content: space-between;
-  padding-left: 200px;
+  padding-left: 150px;
 }
 .cart-continue-btn span {
   display: block;
@@ -61,6 +64,53 @@
   margin-bottom: 15px;
 }
 .cart-features > ul > li {
+  line-height: 0px;
   display: flex;
   gap: 20px;
+}
+#cartLeftSide {
+  width: 70%;
+  /* height: 100%; */
+  /* border: 1px solid; */
+}
+#contener {
+  display: flex;
+  gap: 50px;
+  margin-left: 30px;
+  color: #62646a;
+}
+#cartRating {
+  display: flex;
+  align-items: center;
+  fill: #ffb33e;
+  margin-top: -25px;
+}
+#cartRating p {
+  margin-left: 10px;
+}
+#cartTitle {
+  width: 95%;
+  margin: auto;
+  border-bottom: 1px solid lightgray;
+}
+#cartAbout {
+  margin-bottom: 20px;
+  /* border-bottom: 1px solid lightgray; */
+}
+#cartLogoStyle {
+  display: flex;
+  gap: 50px;
+}
+#cartAboutMe {
+  border: 1px solid;
+  padding: 20px;
+}
+#cartAboutMeHead {
+  display: flex;
+  gap: 50px;
+  border-bottom: 1px solid lightgray;
+}
+
+.cartFill{
+  fill: #1dbf73;
 }
