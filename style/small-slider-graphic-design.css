@@ -1,0 +1,119 @@
+.MultiCarousel {
+  float: left;
+  overflow: hidden;
+  padding: 20px;
+  margin-left: 50px;
+  width: 90%;
+  position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+  transition: 1s ease all;
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div {
+  text-align: center;
+  padding: 12px;
+  margin: 3px;
+  background: white;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+  cursor: pointer;
+  padding: 5px 10px;
+  position: absolute;
+  border-radius: 50%;
+  top: calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+  top: 0;
+  right: 35px;
+  border: none;
+  padding: 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all ease-in-out 2s;
+}
+
+.MultiCarousel .rightLst {
+  top: 0;
+  border: none;
+  right: 0;
+  padding: 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all ease-in-out 1s;
+}
+
+.MultiCarousel .leftLst:hover,
+.MultiCarousel .rightLst:hover {
+  background-color: #fff;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+  pointer-events: none;
+  background: #ccc;
+}
+
+.pad15 {
+  position: relative;
+  z-index: 0;
+  width: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lead-p-tag {
+  position: absolute;
+  width: 94%;
+  z-index: 1;
+  font-size: 14px;
+  top: 19%;
+  margin-left: 25px;
+  color: black;
+}
+.lead-p-tag:hover{
+  color: rgb(212, 30, 30);
+
+}
+
+.img-small-slider {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin-left: -125px;
+}
+
+.title-in-small-slider-h2 {
+  margin-left: 80px;
+  margin-bottom: -20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .title-in-small-slider-h2 {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+  }
+
+  .MultiCarousel {
+    margin-left: -5%;
+  }
+
+  .MultiCarousel .rightLst {
+    margin-top: 85px;
+    margin-right: -10px;
+  }
+  .MultiCarousel .leftLst {
+    margin-top: 85px;
+    margin-right: -10px;
+  }
+}
