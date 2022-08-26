@@ -7,7 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style/footer.css" />
     <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="../style/navbar.css"> -->
 </head>
+<style>
+    #recog {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: -7px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        color: #b5b6ba;
+        background-color: rgb(248, 248, 248);
+    }
+</style>
 
 <body onload="show()">
     <div id="navbar" >
@@ -56,8 +71,14 @@
             <button>NFT Art</button>
         </div>
     </div>
-            <link rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+     <div id="recog">
+        <h3>Trusted By:</h3>
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/facebook.31d5f92.png" alt="">
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/google.517da09.png" alt="">
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/netflix.e3ad953.png" alt="">
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/pandg.8b7310b.png" alt="">
+        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/paypal.ec56157.png" alt="">
+    </div>
 
     
             <!-- ====================================================   =================================================== -->
@@ -445,9 +466,7 @@
     <link rel="stylesheet" href="../style/index.css" />
     
     <script src="../script/index.js"></script>
-
-
-    <!-- footer -->
+<!-- footer -->
     <div id="footer"></div>
 </body>
 
@@ -485,10 +504,28 @@
         }
     }, 8000)
 </script>
+
 <script type="module">
     import {footer} from "../script/footer.js"
-    console.log(footer)
 
     document.getElementById("footer").innerHTML = footer()
 
 </script>
+
+
+<!-- <script type="module">
+    import navbar_imp from '../components/navbar_exp.js';
+
+    let nav = document.getElementById("navbar");
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+            nav.innerHTML = navbar_imp()
+        }
+        else {
+            
+        }
+
+        console.log(window.scrollY);
+    })
+</script> -->

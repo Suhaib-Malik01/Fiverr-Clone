@@ -1,6 +1,5 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 #navbar {
@@ -331,14 +330,13 @@ h4 {
 }
 
 .title {
-    padding: 0px 5px;
+    padding: 0px 6px;
     height: auto;
 }
 
 .title p {
-    margin-top: -0.2rem;
+    margin-top: 3px;
     font-size: 16px;
-    font-weight: bold;
     padding: 0px 5px;
 }
 
@@ -383,7 +381,6 @@ h4 {
 
 .pricing>:last-child>:first-child {
     font-size: 14px;
-   
     font-weight: normal;
     color: rgb(131, 131, 131);
 }
@@ -420,6 +417,29 @@ h4 {
     gap: 20px;
     overflow-y: auto;
 }
+#Products-3{
+    width: 1400px;
+    display: flex;
+    padding: 10px 0px;
+    font-size: 19px;
+    margin: auto;
+    gap: 20px;
+    overflow-y: scroll;
+}
+#Products-3::-webkit-scrollbar{
+    visibility: hidden;
+}
+.product-box3{
+    position: relative;
+    left: 0;
+    border: 1px solid rgb(239, 239, 239);
+    transition: 0.5s;
+    min-width: 20%;
+}
+.product-box3>img{
+    width: 100%;
+}
+
 #Products-2::-webkit-scrollbar{
     visibility: hidden;
 }
@@ -431,7 +451,7 @@ h4 {
 #products-Crousel+h2>span{
     color: #446ee7 ;
 }
-.pr-btn2{
+.pr-btn2,.pr-btn3{
     padding: 12px 14px;
     color: gray;
     background-color: white;
@@ -442,8 +462,7 @@ h4 {
     width: 100%;
     height: 20;
 }
-#left-btn-pr2 button img{
-    
+#left-btn-pr2 button img,#left-btn-pr3 button img{
     rotate: 180deg;
 }
 #left-btn-pr2 button{
@@ -466,8 +485,12 @@ h4 {
     left: 0;
     border: 1px solid rgb(239, 239, 239);
     transition: 0.3s;
+    min-width: 20%;
 }
-section+h2{
+.product-box2>img{
+    width: 100%;
+}
+span+h2,section+h2{
     width: 1400px;
     margin: auto;
     margin-top: 30px;
@@ -480,13 +503,160 @@ section+h2{
     margin: auto;
     margin-top: 20px;
     gap: 20px;
-    
+}
+#left-btn-pr3 button{
+    position: absolute;
+    left: 14rem;
+    top: 1430px;
+    z-index: 1;
+}
+#right-btn-pr3 button{
+    position: absolute;
+    right: 15rem;
+    top: 1430px;
+    z-index: 1;
+}
 
+#right-btn-pr3 button{
+    position: absolute;
+    z-index: 1;
+}
+.pr-btn3 img{
+    width: 100%;
+    height: 20;
 }
 #Products-4>div>img{
     width: 100%;
 }
-
 #Products-4>div{
     border: 1px solid #e8e8e8;
+}
+
+#handpicked-line{
+    margin-top: 100px;
+    color: rgb(21, 21, 21);
+}
+#Handpicked-section{
+    width: 1400px;
+    display: flex;
+    margin: 30px auto;
+    gap: 20px;
+    overflow-y: auto;
+}
+#Handpicked-section::-webkit-scrollbar{
+    visibility: hidden;
+}
+.handpicked-box{
+    position: relative;
+    left: 0;
+    min-width: 20%;
+    height: 400px;
+    transition: 0.3s;
+
+}
+.handpicked-box img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 70%;
+}
+.handpicked-pr-id{
+    display: flex;
+    gap: 5px;
+    padding: 0px 5px 5px 5px;
+    border: 1px solid rgb(205, 205, 205);
+}
+.handpicked-pr-id img{
+    margin: 5px 0px 0px 0px;
+    width: 15%;
+    
+}
+.handpicked-pr-name{
+    margin-top: -10px;
+}
+.handpicked-pr-name p{
+    font-size: 13px;
+    margin: -20px 0px 0px 2px;
+    color: rgb(139, 139, 139);
+    
+}
+#left-btn-handpicked img{
+    rotate: 180deg;
+
+    
+}
+
+#left-btn-handpicked button{
+    position: absolute;
+    left: 225px;
+    top: 2370px;
+    
+}
+#left-btn-handpicked button:hover,#right-btn-handpicked button:hover{
+    cursor: pointer;
+}
+#right-btn-handpicked button{
+    position: absolute;
+    right: 225px;
+    top: 2370px;
+}
+.pr-btn-hand img{
+    width: 100%;
+    height: 20;
+}
+.pr-btn-hand{
+    padding: 12px 14px;
+    color: gray;
+    background-color: white;
+    border: 1px solid rgb(187, 186, 186);
+    border-radius: 50%;
+}
+#img-crousel{
+    display: flex;
+    width: 1400px;
+    margin: auto;
+    height: 240px;
+    overflow-y: auto;
+    margin-top: 60px;
+}
+#img-crousel::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.img-crousel-box{
+    display: flex;
+    position: relative;
+    left: 0;
+    flex-direction: column;
+    min-width: 100%;
+    height: 100%;
+    color: rgb(238, 238, 238);
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 30px 0px 50px -50px inset;
+}
+.img-crousel-box p{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 25px;
+    margin-top: -15px;
+}
+.img-crousel-box h2{
+    font-weight: bold;
+    padding: 0px 25px;
+    font-size: 30px;
+}
+#img-crousel-box-1{
+    background-image: url("https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/457fe5bd7ee6ad1ca0a8af5477360984-1614844744690\/Facebook\%20Ads\.jpg");
+    background-repeat: no-repeat;
+}
+#img-crousel-box-2{
+    background-image: url("https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/579aa581549375f6f765229f28786684-1614853429803\/Personal\%20Branding\.jpg");
+    background-repeat: no-repeat;
+}
+#img-crousel-box-3{
+    background-image: url("https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/6606be5be38e408df403ecc52797cd97-1614845806749\/Conversion\%20Rate\%20Optimization\.jpg");
+    background-repeat: no-repeat;
+}
+#img-crousel-box-4{
+    background-image: url("https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/579aa581549375f6f765229f28786684-1614853429793\/Social\%20Media\.jpg");
+    background-repeat: no-repeat;
 }

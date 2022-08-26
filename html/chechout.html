@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div id="price-summery"></div>
+  </body>
+</html>
+<script>
+  let data = JSON.parse(localStorage.getItem(""));
+
+  let priceSummery = () => {
+    let box = document.getElementById("price-summery");
+
+    let title = document.createElement("h1");
+    title.innerText = "Price Summery";
+
+    box.append(title);
+  };
+  priceSummery()
+</script>

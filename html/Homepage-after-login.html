@@ -6,6 +6,344 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style/login-homepage.css">
+    <style>.dropdown {
+        border-bottom: #c9cacc 1px solid;
+        color: #74767e;
+        height: 45px;
+        text-align: center;
+        background-color: white;
+    }
+    .dropdown > ul {
+        display: inline-flex;
+        list-style: none;
+        gap:40px;
+        cursor: pointer
+    }
+    
+    #ele1 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele1 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -40px;
+    }
+    
+    #ele1 > div > ul > li {
+        list-style: none;
+    }
+    
+    #ele1 > div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        /* justify-content: left; */
+    }
+    #ele1 {
+        width: 900px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+    }
+    #ele1 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    
+    
+    #ele2 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele2 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -40px;
+    }
+    
+    #ele2 > div > ul > li {
+        list-style: none;
+    }
+    
+    #ele2 > div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    #ele2 {
+        width: 500px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+        padding: 20px;
+    }
+    #ele2 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    #ele3 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele3 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -40px;
+    }
+    
+    #ele3 > div > ul > li {
+        list-style: none;
+    }
+    
+    #ele3 > div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        /* align-items: center; */
+    }
+    #ele3 {
+        width: 600px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+        padding: 20px;
+    }
+    #ele3 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    
+    #ele4 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele4 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -40px;
+    }
+    
+    #ele4 > div > ul > li {
+        list-style: none;
+    }
+    
+    #ele4 > div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        /* align-items: center; */
+    }
+    #ele4 {
+        width: 600px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+        padding: 20px;
+    }
+    #ele4 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    
+    #ele5 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele5 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -40px;
+    }
+    
+    #ele5 > div > ul > li {
+        list-style: none;
+    }
+    
+    #ele5 > div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    #ele5 {
+        width: 450px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+        padding: 20px;
+    }
+    #ele5 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    #ele6 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele6 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -240px;
+    }
+    
+    #ele6> div > ul > li {
+        list-style: none;
+    }
+    
+    #ele6 > div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    #ele6 {
+        width: 450px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+        padding: 20px;
+    }
+    #ele6 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    
+    #ele7 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele7 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -340px;
+    }
+    
+    #ele7 > div > ul > li {
+        list-style: none;
+    }
+    
+    #ele7 > div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    #ele7 {
+        width: 450px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+        padding: 20px;
+    }
+    #ele7 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    #ele8 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele8 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -400px;
+    }
+    
+    #ele8 > div > ul > li {
+        list-style: none;
+    }
+    
+    #ele8 > div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    #ele8 {
+        width: 450px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+        padding: 20px;
+    }
+    #ele8 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    
+    
+    #ele9 {
+        display: none;
+    }
+    
+    .dropdown > ul > li:hover #ele9 {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -420px;
+    }
+    
+    #ele9> div > ul > li {
+        list-style: none;
+    }
+    
+    #ele9> div{
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        /* align-items: center; */
+    }
+    #ele9 {
+        width: 450px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        z-index: 2;
+        padding: 20px;
+    }
+    #ele9 > div > ul > li {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }</style>
 
 </head>
 
@@ -41,7 +379,7 @@
         </div>
         <h4>Orders</h4>
     </div>
-    <ul id="nav-dropdown">
+    <!-- <ul id="nav-dropdown">
         <li>Graphics & Design</li>
         <li>Digital Marketing</li>
         <li>Writing & Translation</li>
@@ -51,7 +389,440 @@
         <li>Business</li>
         <li>Lifestyle</li>
         <li>Trending</li>
-    </ul>
+    </ul> -->
+
+    <div class="dropdown">
+        <ul>
+            <li class="gd">Graphics & Design
+                <div id="ele1">
+                    <div>
+                        <ul>
+                            <h5>Logo & Brand Identity</h5>
+    
+                            <li>Logo Design</li>
+                            <li>Brand Style Guides</li>
+                            <li>Fonts & Typography</li>
+                            <li>Business Cards & Stationery</li>
+                        </ul>
+    
+                        <ul>
+                            <h5>Gaming</h5>
+                            <li>Game Art</li>
+                            <li>Graphics for Streamers</li>
+                            <li>Twitch Store</li>
+                            <li>Art & Illustration</li>
+                        </ul>
+    
+                        <ul>
+                            <h5>Illustration</h5>
+                            <li>NFT Art</li>
+                            <li>Pattern Design</li>
+                            <li>Portraits & Caricatures</li>
+                            <li>Cartoons & Comics</li>
+                            <li>Tattoo Design</li>
+                            <li>Storyboards</li>
+                            <li>Web & App Design</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <h5>Web & App Design</h5>
+                            <li>App Design</li>
+                            <li>Website Design</li>
+                            <li>UX Design</li>
+                            <li>Landing Page Design</li>
+                            <li>Icon Design</li>
+                            <li>Marketing Design</li>
+                        </ul>
+
+                        <ul>
+                            <h5>Marketing Design</h5>
+                            <li>Social Media Design</li>
+                            <li>Email Design</li>
+                            <li>Web Banners</li>
+                            <li>Signage Design</li>
+                            
+                        </ul>
+
+                        <ul>
+                            <h5>Packaging & Covers</h5>
+                            <li>Packaging & Label Design</li>
+                            <li>Book Design</li>
+                            <li>Album Cover Design</li>
+                            <li>Podcast Cover Art</li>
+                            <li>Car Wraps</li>
+                        </ul>
+
+                        <ul>
+                            <h5></h5>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <h5>Visual Design</h5>
+                            <li>Image Editing</li>
+                            <li>Presentation Design</li>
+                            <li>Infographic Design</li>
+                            <li>Vector Tracing</li>
+                            <li>Resume Design</li>
+                        </ul>
+
+                        <ul>
+                            <h5>Architecture & Building Design</h5>
+                            <li>Architecture & Interior Design</li>
+                            <li>Landscape Design</li>
+                            <li>Building Engineering</li>
+                            <li>Building Information Modeling</li>
+                        </ul>
+
+                        <ul>
+                            <h5>Fashion & Jewelry</h5>
+                            <li>Fashion Design</li>
+                            <li>Jewelry Design</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <h5>Print Design</h5>
+                            <li>T-Shirts & Merchandise</li>
+                            <li>Flyer Design</li>
+                            <li>Brochure Design</li>
+                            <li>Poster Design</li>
+                            <li>Catalog Design</li>
+                            <li>Menu Design</li>
+                            <li>Invitation Design</li>
+                        </ul>
+
+                        <ul>
+                            <h5>Product & Characters Design</h5>
+                            <li>Industrial & Product Design</li>
+                            <li>Character Modeling</li>
+                            <li>Trade Booth Design</li>
+                        </ul>
+
+                        <ul>
+                            <h5>Miscellaneous</h5>
+                            <li>Logo Maker Tool</li>
+                            <li>Design Advice</li>
+                            <li>Other</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+
+
+            <li class="dm">Digital Marketing
+                <div id="ele2">
+                    <div>
+                        <ul>
+                            <li>Social Media Marketing</li>
+                            <li>Social Media Advertising</li>
+                            <li>Search Engine Optimization (SEO)</li>
+                            <li>Local SEO</li>
+                            <li>Marketing Strategy</li>
+                            <li>Public Relations</li>
+                            <li>Guest Posting</li>
+                            <li>Video Marketing</li>
+                            <li>Email Marketing</li>
+                            <li>Web Analytics</li>
+                            <li>Text Message Marketing</li>
+                            <li>Crowdfunding</li>
+                        </ul>
+
+                        <ul>
+                            <li>Marketing AdviceNEW</li>
+                            <li>Search Engine Marketing (SEM)</li>
+                            <li>Display Advertising </li>
+                            <li>E-Commerce Marketing</li>
+                            <li>Influencer Marketing</li>
+                            <li>Community Management</li>
+                            <li>Mobile App Marketing</li>
+                            <li>Music Promotion</li>
+                            <li>Book & eBook Marketing</li>
+                            <li>Podcast Marketing</li>
+                            <li>Affiliate Marketing</li>
+                            <li>Other</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="wt">Writing & Translation
+                <div id="ele3">
+                    <div>
+                        <ul>
+                            <li>Articles & Blog Posts</li>
+                            <li>Translation</li>
+                            <li>Proofreading & Editing</li>
+                            <li>Resume Writing</li>
+                            <li>Cover Letters</li>
+                            <li>LinkedIn Profiles</li>
+                            <li>Ad CopyNEW</li>
+                            <li>Sales Copy</li>
+                            <li>Social Media Copy</li>
+                            <li>Email Copy</li>
+                            <li>Case Studies</li>
+                        </ul>
+
+                        <ul>
+                            <li>Book & eBook Writing</li>
+                            <li>Book EditingNEW</li>
+                            <li>Scriptwriting</li>
+                            <li>Podcast Writing</li>
+                            <li>Beta Reading</li>
+                            <li>Creative Writing</li>
+                            <li>Brand Voice & Tone</li>
+                            <li>UX Writing</li>
+                            <li>Speechwriting</li>
+                            <li>eLearning Content DevelopmentNEW</li>
+                            <li>Technical Writing</li>
+                        </ul>
+
+                        <ul>
+                            <li>Job DescriptionsNEW</li>
+                            <li>White Papers</li>
+                            <li>Website Content</li>
+                            <li>Product Descriptions</li>
+                            <li>Press Releases</li>
+                            <li>Business Names & Slogans</li>
+                            <li>Grant Writing</li>
+                            <li>Transcription</li>
+                            <li>Research & Summaries</li>
+                            <li>Writing AdviceNEW</li>
+                            <li>Other</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+
+
+            <li class="va">Video & Animation
+                <div id="ele4">
+                    <div>
+                        <ul>
+                            <li>Video Editing</li>
+                            <li>Short Video Ads</li>
+                            <li>Whiteboard & Animated Explainers</li>
+                            <li>Character Animation</li>
+                            <li>Lyric & Music Videos</li>
+                            <li>Logo Animation</li>
+                            <li>Intros & Outros</li>
+                            <li>Visual Effects</li>
+                            <li>Subtitles & Captions</li>
+                            <li>Spokesperson Videos</li>
+                            <li>Unboxing Videos</li>
+                            <li>Animated GIFs</li>
+                        </ul>
+
+                        <ul>
+                            <li>3D Product Animation</li>
+                            <li>Social Media VideosNEW</li>
+                            <li>E-Commerce Product Videos</li>
+                            <li>Live Action Explainers</li>
+                            <li>Lottie & Website Animation</li>
+                            <li>NFT Animation</li>
+                            <li>Corporate Videos</li>
+                            <li>App & Website Previews</li>
+                            <li>Animation for Streamers</li>
+                            <li>Slideshow Videos</li>
+                            <li>Crowdfunding Videos</li>
+                            <li>Meditation Videos</li>
+                            <li>Product Photography</li>
+                        </ul>
+
+                        <ul>
+                            <li>Animation for Kids</li>
+                            <li>Article to Video</li>
+                            <li>Game Trailers</li>
+                            <li>Book Trailers</li>
+                            <li>Real Estate Promos</li>
+                            <li>eLearning Video Production</li>
+                            <li>Video Templates Editing</li>
+                            <li>Screencasting Videos</li>
+                            <li>Local PhotographyBETA</li>
+                            <li>VideographersNEW</li>
+                            <li>Filmed Video ProductionNEW</li>
+                            <li>Video AdviceNEW</li>
+                            <li>Other</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="ma">Music & Audio
+                <div id="ele5">
+                    <div>
+                        <ul>
+                            <li>Voice Over</li>
+                            <li>Producers & Composers</li>
+                            <li>Singers & Vocalists</li>
+                            <li>Session Musicians</li>
+                            <li>Jingles & Intros</li>
+                            <li>Songwriters</li>
+                            <li>Online Music Lessons</li>
+                            <li>Beat Making</li>
+                            <li>Audiobook Production</li>
+                            <li>Audio Ads Production</li>
+                            <li>Sound Design</li>
+                            <li>Mixing & Mastering</li>
+                        </ul>
+
+                        <ul>
+                            <li>Audio Editing</li>
+                            <li>Podcast Editing</li>
+                            <li>Music Transcription</li>
+                            <li>Vocal Tuning</li>
+                            <li>DJ Drops & Tags</li>
+                            <li>DJ Mixing</li>
+                            <li>Remixing & Mashups</li>
+                            <li>Synth Presets</li>
+                            <li>Meditation Music</li>
+                            <li>Audio Logo & Sonic Branding</li>
+                            <li>Music & Audio AdviceNEW</li>
+                            <li>Other</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="pt">Programming & Tech
+                <div id="ele6">
+                    <div>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>Website Builders & CMS</li>
+                            <li>Game Development</li>
+                            <li>Development for Streamers</li>
+                            <li>Web Programming</li>
+                            <li>E-Commerce Development</li>
+                            <li>Mobile Apps</li>
+                            <li>Desktop Applications</li>
+                            <li>Chatbots</li>
+                            <li>Support & IT</li>
+                            <li>Online Coding Lessons</li>
+                            <li>Cybersecurity & Data Protection</li>
+                        </ul>
+
+                        <ul>
+                            <li>Get Your Website in a Few Steps</li>
+                            <li>Electronics EngineeringNEW</li>
+                            <li>Convert Files</li>
+                            <li>User Testing</li>
+                            <li>QA & Review</li>
+                            <li>Blockchain & Cryptocurrency</li>
+                            <li>NFT DevelopmentNEW</li>
+                            <li>Databases</li>
+                            <li>Data Processing</li>
+                            <li>Data EngineeringNEW</li>
+                            <li>Data ScienceNEW</li>
+                            <li>Other</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li class="bn">Business
+                <div id="ele7">
+                    <div>
+                        <ul>
+                            <li>Virtual Assistant</li>
+                            <li>E-Commerce Management</li>
+                            <li>Market Research</li>
+                            <li>Sales</li>
+                            <li>Customer Care</li>
+                            <li>CRM Management NEW</li>
+                            <li>ERP ManagementNEW</li>
+                            <li>Supply Chain Management</li>
+                            <li>Project Management</li>
+                            <li>Event ManagementNEW</li>
+                            <li>Game Concept Design</li>
+                        </ul>
+
+                        <ul>
+                            <li>Business Plans</li>
+                            <li>Financial Consulting</li>
+                            <li>Legal Consulting</li>
+                            <li>Business Consulting</li>
+                            <li>Presentations</li>
+                            <li>HR Consulting</li>
+                            <li>Career Counseling</li>
+                            <li>Data Entry</li>
+                            <li>Data Analytics</li>
+                            <li>Data Visualization</li>
+                            <li>Other                            
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="lf">Lifestyle
+                <div id="ele8">
+                    <div>
+                        <ul>
+                            <li>Online Tutoring</li>
+                            <li>Gaming</li>
+                            <li>Astrology & Psychics</li>
+                            <li>Modeling & Acting</li>
+                            <li>Wellness</li>
+                            <li>Traveling</li>
+                            <li>Fitness Lessons</li>
+                            <li>Dance Lessons</li>
+                            <li>Life Coaching</li>
+                        </ul>
+
+                        <ul>
+                            <li>Greeting Cards & Videos</li>
+                            <li>Personal Stylists</li>
+                            <li>Cooking Lessons</li>
+                            <li>Craft Lessons</li>
+                            <li>Arts & Crafts</li>
+                            <li>Family & Genealogy</li>
+                            <li>Collectibles</li>
+                            <li>Other</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="td">Trending
+                <div id="ele9">
+                    <div>
+                        <ul>
+                            <li>Dropshipping</li>
+                            <li>E-Commerce Marketing</li>
+                            <li>Game Development</li>
+                            <li>Discord Services</li>
+                            <li>NFT Services</li>                        
+                        </ul>
+
+                        <ul>
+                            <li>Architecture & Interior Design</li>
+                            <li>Data</li>
+                            <li>Resume Writing</li>
+                            <li>Search Engine Optimization (SEO)</li>
+                            <li>Character Modeling</li>
+                            <li>Character Animation</li>
+                            <li>Image Editing</li>  
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            </ul>
+    </div>
+
+
     <div id="welcome-container">
         <div id="post-reqdiv">
             <h3>HI <span class="name">Suhaib</span>,</h3>
@@ -112,10 +883,12 @@
                     </svg></span></h3>
             <div>
                 <button class="pr-btn">
-                    <img src="data:image/png;base64,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" alt="">
+                    <img src="data:image/png;base64,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"
+                        alt="">
                 </button>
                 <button class="pr-btn">
-                    <img src="data:image/png;base64,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" alt="">
+                    <img src="data:image/png;base64,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"
+                        alt="">
                 </button>
             </div>
         </div>
@@ -141,7 +914,7 @@
                 </div>
                 <div class="pricing">
                     <div>
-                        <svg  viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
                             </path>
@@ -162,7 +935,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -207,7 +980,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -252,7 +1025,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -297,7 +1070,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -342,7 +1115,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -387,7 +1160,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -432,7 +1205,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -477,7 +1250,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -522,7 +1295,7 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
             <div class="product-box">
@@ -567,15 +1340,15 @@
                         <span>Starting From</span>
                         <span>₹2,456</span>
                     </div>
-    
+
                 </div>
             </div>
-    
+
         </section>
     </div>
 
     <h2>Because you saved <span>create you a website using duda builder</span> </h2>
-    
+
     <section id="Products-2">
         <div class="product-box2">
             <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
@@ -1036,12 +1809,475 @@
     </span>
     <span id="right-btn-pr2">
         <button class="pr-btn2">
-            <img src="data:image/png;base64,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" alt="">
+            <img src="data:image/png;base64,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"
+                alt="">
         </button>
     </span>
     <section id="Products-3">
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-box3">
+            <img src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/110928855/original/c3fc46f6ac4d0287a2511cf5b06144aaa499326d.jpg"
+                alt="">
+            <div class="prs-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f5e3944f37ecd11f0ea18503379dafca-1620745529349/04d08dfb-b55f-4281-9efc-2d2d724cbd73.jpg"
+                    alt="">
+                <p>mrtranscendence</p>
+            </div>
+            <div class="title">
+                <p>I will build a professional squarespace website design</p->
+                <p class="rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16"
+                        height="16">
+                        <path fill="currentColor"
+                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                        </path>
+                    </svg>
+                    <span>4.8</span>
+                </p>
+            </div>
+            <div class="pricing">
+                <div>
+                    <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0769 0H0.923077C0.413276 0 0 0.415736 0 0.928571C0 1.44141 0.413276 1.85714 0.923077 1.85714H15.0769C15.5867 1.85714 16 1.44141 16 0.928571C16 0.415736 15.5867 0 15.0769 0Z">
+                        </path>
+                        <path
+                            d="M15.0769 5.57143H0.923077C0.413276 5.57143 0 5.98717 0 6.5C0 7.01284 0.413276 7.42857 0.923077 7.42857H15.0769C15.5867 7.42857 16 7.01284 16 6.5C16 5.98717 15.5867 5.57143 15.0769 5.57143Z">
+                        </path>
+                        <path
+                            d="M15.0769 11.1429H0.923077C0.413276 11.1429 0 11.5586 0 12.0714C0 12.5843 0.413276 13 0.923077 13H15.0769C15.5867 13 16 12.5843 16 12.0714C16 11.5586 15.5867 11.1429 15.0769 11.1429Z">
+                        </path>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4469 1.95625C12.7344 0.496875 10.1875 0.759375 8.61561 2.38125L7.99999 3.01562L7.38436 2.38125C5.81561 0.759375 3.26561 0.496875 1.55311 1.95625C-0.409388 3.63125 -0.512513 6.6375 1.24374 8.45312L7.29061 14.6969C7.68124 15.1 8.31561 15.1 8.70624 14.6969L14.7531 8.45312C16.5125 6.6375 16.4094 3.63125 14.4469 1.95625Z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <span>Starting From</span>
+                    <span>₹2,456</span>
+                </div>
+
+            </div>
+        </div>
+        
 
     </section>
+    <span id="left-btn-pr3">
+        <button class="pr-btn3">
+            <img src="https://i.ibb.co/hCXN8LJ/download.png" alt="">
+        </button>
+    </span>
+    <span id="right-btn-pr3">
+        <button class="pr-btn3">
+            <img src="https://i.ibb.co/hCXN8LJ/download.png" alt="">
+        </button>
+    </span>
+
     <h2>Gigs you may like</h2>
 
     <section id="Products-4">
@@ -1406,13 +2642,179 @@
             </div>
         </div>
 
-        
+
 
     </section>
-    
-    
+
+    <h2 id="handpicked-line">Beautiful illustrations, handpicked for you </h2>
+    <section id="Handpicked-section">
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto,w_400,dpr_1.0/v1/attachments/generic_asset/asset/7a95123bcdfb2c68385a93c15dc1c04b-1617011757239/create-a-quirky-combination-of-text-and-illustration.png"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/630f56ddfda1e5995c3af5a44e44b9d5-1606423207/Netta1option3/make-you-a-cool-digital-collage-art.jpg"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/8731d181eed8158cb2db5ee124617272-1559983517/190608_Fiverr_Babarali85/create-awesome-digital-illustrations.JPG"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/8731d181eed8158cb2db5ee124617272-1559983517/190608_Fiverr_Babarali85/create-awesome-digital-illustrations.JPG"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/8731d181eed8158cb2db5ee124617272-1559983517/190608_Fiverr_Babarali85/create-awesome-digital-illustrations.JPG"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/8731d181eed8158cb2db5ee124617272-1559983517/190608_Fiverr_Babarali85/create-awesome-digital-illustrations.JPG"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/8731d181eed8158cb2db5ee124617272-1559983517/190608_Fiverr_Babarali85/create-awesome-digital-illustrations.JPG"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/8731d181eed8158cb2db5ee124617272-1559983517/190608_Fiverr_Babarali85/create-awesome-digital-illustrations.JPG"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/8731d181eed8158cb2db5ee124617272-1559983517/190608_Fiverr_Babarali85/create-awesome-digital-illustrations.JPG"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="handpicked-box">
+            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto,w_400,dpr_1.0/attachments/delivery/asset/8731d181eed8158cb2db5ee124617272-1559983517/190608_Fiverr_Babarali85/create-awesome-digital-illustrations.JPG"
+                alt="">
+            <div class="handpicked-pr-id">
+                <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f6fa36d845d712e5d7cb9d7085d58e66-1558545571663/2f3230e6-b78c-4277-879b-d975f8351326.jpg"
+                    alt="">
+                <div class="handpicked-pr-name">
+                    <h5>Digital illustration</h5>
+                    <p>by byastridpr</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <span id="left-btn-handpicked">
+        <button class="pr-btn-hand">
+            <img src="https://i.ibb.co/hCXN8LJ/download.png" alt="">
+        </button>
+    </span>
+    <span id="right-btn-handpicked">
+        <button class="pr-btn-hand">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEX////7+/v+/v78/Pz9/f0BAQEAAADq6ur29vaBgYGkpKRcXFzt7e2YmJiwsLCfn59WVlZNTU2Pj4+JiYloaGi2trY5OTliYmKqqqpGRkZ7e3vBwcESEhLOzs7k5OQyMjIlJSVzc3PPogeXAAAIa0lEQVR4nL2ciZKjNhCGhcA2O2PP4Tmzu9lk3v8lAwKD1Jd+CSauylQtAqn19aFuCeK8c65rxr9t68a/3fDHN+vlbroc/ja0Mb7c+rWxXRp91Ni1pMOpkY9DZYo60mTqpGdsgcsmGf6ZvYuLGj3TUlEBFI3Z+P9wijWIPGNz0hpFTqxRZcs4kXG2cuoiyURO0whqh8Qv5ss6JxW1eHkDJzpOyb2CA3RGYyxwbE/sGYMTLJMlagUnwW4hTorJTJctexI4ZcGPlzVOeb+L3R32VQvielmJf1ZwVGOBzEkOqCqnm6XjnKxhiziZcVDmhNoTsN7Ja7DZYSdxApYPK47DnBQDHS+bnGCZWK4S+R1u44n3AXrOQBQv+8JnFiHQYac5R9HYzOnkxQpOflA9h2Fd8/b40DuMU2L6tDHRB1WWzElZ0vyv4/D7/YBxousd7ktZG485/X04ht+bmasAnDqL0wBRUL8agt6Px8PxMEj2GBHWlk6DU9a/Yflb1w8yhd/ICl9bijlNyQuzcdlNzseZ1CDVnWuhZ0ri7OoAMKfh93smNbPC12DTVx1zfknP2rTc3TGS6g7iVLiGhScbY1osyPv2dVTgqL7D5IOG36GFtWMOMMyjLPd9JazE+LQ+U7iGNbfLAKeosX8Ntj6zeii3J5ETL4QsPbPLzn2krCzX4pxQUeXBxdw3NDJWlZyMxbA8HXHuntjVxtxXCCti7qtzGp9IWX1GGmS5L5yQEYEBv2OiJqw+MU6oSsMzhZyCBikrF+W+8B6Gzmn6oZzWRsZK5QSvd1HsZ4PTafHafGxMWd1JnODcl88jq2c5ELkmYfUQXEblJOS+Iie6waGoX+Y0NjYJq8dJg4q+WYcmp8ZzIOhS0DylrDBO8lrfkGfynORG73vCymuxwOCk+KrFKRPke8Yq6V+I43KQp5wcRUHjk9I4XW4+qF2V+d3cyGyEosA5ja47sDrErJAFVNQHTcjsWOCl/tcuIlaDVBcKXljpmO4kfShxAwle4wXKqoATj0/LONlh7bpiiqJL5XVJa2drejontwIvPW+5KfbMWNmcfJaT2YWYSvIawT8tNepkV2XlTGq3oRGMT0ZHrTs/Ex9kk5RzOn2cDZzWZ5Ioelm7quJ0iwil9kRz39MzyfoU8Hm/izc4oskZy5N67DbaVaTBx+DT1ZzCr4YTlez8TLM+LdEA4qDOyYjjQu7rmueUFRSfGKfbBgevEYBzKUGDp6eU1UqI72Hk9GFvgZec3zV/EVY2J6dx6pyr4MT2M+dRKCvpEDTPKUzSuEvhFPWc5JmuJ6xk1+K5Cp171L+R06F7GCmrR2M25jj0LmCNVziFlTRldTdbRxmn6Ay5lhOZB2UVa9DilAaKHTmFns+UVTEn75IzZMUwFb/jDhA0mLK63PxbCy6MU2Lp+H6EskbenjkxVk6rpZQgL3OyzqWUOjiaR5ozXLOc2NxzhgMHr/gQ4E/C6nNutHIVOjzKSfE7cUk7M1a4fy8lFpD0lJ3f/XlPWZVw8nOJ1RooTL/TUrGY1WFk1RVwmn7ovSXnd5yVzoktDKptwJyUJW2IolGV+lZiI9l7i4J8nNOlrP7J5CrpJAtz37icycWP/j0qvM4dZuOhq6rcN89pbOzfl9L5eDw5kNOtxLJz31iavN+twybq+5fJpHNyivyy3+XfC4wal6AQSH3KMsmTLOEk5yoIp1DK43M35gzYE8ApBM8fJZxaYYNjl3POdElGOS37sqbfwe8gk8ZzkuihnNKzUcaJh6AiezpVcYp8Sb43DF57zlnFib24Lw8b+11BHCcbexcPxSf6krz8HgaQyMhrZMrpxdKduqiX1VL5fLlPOF0xTtQMFE75WkpW7Pm+nlMU6rZxIvba2JxMd1llMlBs5mTKxIJwlhPRM5pcVXESzte25L6UU/8Bc5Jj5tJo35vN6WKBd+LkpywdqDnzAbW37QmLBW7dTGAyKfea5+bJ9v4L6Hfam0e6a5mJsc1JHDwfC+ZG3Z5o2qbZ09SYvNDBOGVzFTIOkPsCa8s92Sir9rtpnI211NSYvKj3A+NkTRJ0dyv37e/pcR9u47KNoJyi/mnja3xcW1ojSOPINEu66D9qOGn2FBrNXAvi9BXXnHtwWkssIwSZJtm8mpyA3Feaux0cs373ZdacsjHk9UGHNQst2oX/quCU0930sznRfDna63E/zVqq3GmiEkuO4/ma09mcavxuesYVf6e4Nv74Hk7DZfNdSPPs4WcFJ3CfC/7+js7Z5kTPpaw8k1uKMaxpTwmnLfm48IwzOFkvV76YNafMCbCnaZwiTqnuNtecGqcG40QbX+Dcl3GyZJobPfJedIZTt1ccnxu9cxonQ6aryWmjjYcLivyGTC9JjbAfJ0GmTG2+dvH9nMb/yr7nvJq1FGAyTB+ZDQ4A9bWilsJjgZ8bbXsyOZXvj0OcZu+D1+Br/CndfjndGgvcspkA5L5TF79MTkruC753Q2SCu3DvO+a+6+X8BofByffRh6y75nQpp2WDAyozusNR5VTod4xTIlNG/rSj59vH0Vv9jjxDZXKoSY6Xb5+R75v7cpmcbE9ykPdvQSYlp6vwOxYLyHfI2KcN58/r5fTdnFrVh7TFMGFrcYLzAsEB8O0WmqbvvN7F+p5lIkHFK5y0/us5STK5fBdUPUgcz89DsfHFRhQlKaWoqdjNNr7KhHEy19NCv7N0R8+Qse8Uc2zN2jzPqYH+R2tl7xJuigXz5YrvFBEb3MLJyS9/I36ncMrrzran0GhwAnPGutzXSsB35lSX09FncpyUtWVrHWxxavTvkCv8Dv2GMsPJO/4dMkdRprttNs5KLLoG23Eczn0d7bBEJiME7ZjT+bxMHYRibmxrbFy8bMvU/gdYHXvoupJnSAAAAABJRU5ErkJggg=="
+                alt="">
+        </button>
+    </span>
+
+    <div id="img-crousel" >
+        <div id="img-crousel-box-1" class="img-crousel-box">
+            <h2>Facebook ads. Know it all.</h2>
+            <p>Scale your business with best practices covered in this course.</p>
+        </div>
+        <div id="img-crousel-box-2" class="img-crousel-box">
+            <h2>Build a strong online presence</h2>
+            <p>Boost your business with this course on personal branding techniques.</p>
+        </div>
+        <div id="img-crousel-box-3" class="img-crousel-box">
+            <h2>Convert web visitors into customers</h2>
+            <p>Unlock the secrets of conversion rate optimization with this course.</p>
+        </div>
+        <div id="img-crousel-box-4" class="img-crousel-box">
+            <h2>Master social media platforms</h2>
+            <p>Learn how to monetize your online presence with this course.</p>
+        </div>
+        <div id="img-crousel-box-1" class="img-crousel-box">
+            <h2>Facebook ads. Know it all.</h2>
+            <p>Scale your business with best practices covered in this course.</p>
+        </div>
+
+    </div>
+
 </body>
-
 </html>
-
 <script src="/script/login-homepage.js"></script>
