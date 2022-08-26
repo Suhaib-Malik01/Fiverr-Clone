@@ -21,7 +21,7 @@
       <!-- div  leftside -->
       <div id="cartLeftSide">
         <div id="cartTitle">
-          <h1>I will design 3 modern minimalist logo design</h1>
+          <h1 id="title">I will design 3 modern minimalist logo design</h1>
           <div id="cartRating">
             <h4>logoflow</h4>
             <p>Level 2 Seller &nbsp; | &nbsp;</p>
@@ -95,6 +95,7 @@
             <img
               src="https://fiverr-res.cloudinary.com/image/upload/t_gig_pdf_gallery_view_ver4,f_jpg/20220614/modern%20minimalist%20logo%20design_ilaoj2.jpg"
               alt=""
+              id="image"
             />
           </div>
           <div id="cartAbout">
@@ -201,30 +202,29 @@
                 <tr>
                   <td>Package</td>
                   <td>
-                    <b class="cart-bold-tag"> ₹2,096 </b>
-                    <h3 class="cart-h3-tag">Basic</h3>
-                    <br />
-                    <b>SILKY FLOW</b> <br />
+                    <div> ₹2,096 </div>
+                    <h3>Basic</h3>
+                 
+                    <b>SILKY FLOW</b> 
                     <p>
                       3 LOGOS in JPG & PNG (transparent) + NO Mascots & Complex
                       design
                     </p>
                   </td>
                   <td>
-                    <b> ₹5,867 </b><br />
+                    <div> ₹5,867 </div>
                     <h3>Standard</h3>
-                    <br />
-                    <b> FLUID FLOW</b> <br />
+                    <b> FLUID FLOW</b> 
                     <p>
                       4 High Quality Creative designs + Logo Presentation + All
                       file Formats + Unlimited Revisions
                     </p>
                   </td>
                   <td>
-                    <b>₹15,925</b><br />
+                    <div>₹15,925</div>
                     <h3>Premium</h3>
-                    <br />
-                    <b>FLEXIBLE FLOW</b> <br />
+                 
+                    <b>FLEXIBLE FLOW</b> 
                     <p>
                       5 Ultra HQ concepts + UNLIMITED Revision + Stationery
                       Package + Social media kit + VIP support
@@ -313,7 +313,7 @@
                 </tr>
                 <tr>
                   <td>Printable file</td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -325,7 +325,7 @@
                       ></path>
                     </svg>
                   </td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -337,7 +337,7 @@
                       ></path>
                     </svg>
                   </td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -352,7 +352,7 @@
                 </tr>
                 <tr>
                   <td>Source file</td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -364,7 +364,7 @@
                       ></path>
                     </svg>
                   </td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -376,7 +376,7 @@
                       ></path>
                     </svg>
                   </td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -403,7 +403,7 @@
                       ></path>
                     </svg>
                   </td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -415,7 +415,7 @@
                       ></path>
                     </svg>
                   </td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -454,7 +454,7 @@
                       ></path>
                     </svg>
                   </td>
-                  <td>
+                  <td class="cartFill">
                     <svg
                       width="11"
                       height="9"
@@ -465,6 +465,30 @@
                         d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
                       ></path>
                     </svg>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Number of concepts included</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td>
+                    <button class="class-green">Select</button>
+                  </td>
+                  <td>
+                    <button class="class-green">
+                    Select
+                    </button>
+                  </td>
+                  <td>
+                    <button class="class-green">
+                      Select
+                    </button>
                   </td>
                 </tr>
               </tbody>
@@ -484,7 +508,7 @@
         <!-- tab containt -->
         <div id="tab-content">
           <div id="basic" data-tab-content class="active">
-            <h2>₹2,516</h2>
+            <h2 id="cart-basic-price">₹2,516</h2>
             <p>Save up to 5% with Subscribe to Save</p>
             <p>
               GOLD:Headline & Summary Only Optimized Headline + Personalized
@@ -611,7 +635,7 @@
               </ul>
             </div>
 
-            <button class="cart-continue-btn">
+            <button class="cart-continue-btn" onclick="cartbasic()">
               Continue
               <span>
                 <svg
@@ -630,7 +654,7 @@
             <button class="cart-compare-btn">Compare Pakages</button>
           </div>
           <div id="standard" data-tab-content>
-            <h2>₹2,932</h2>
+            <h2 id="cart-standard-price">₹4,932</h2>
             <p>Save up to 5% with Subscribe to Save</p>
             <p>
               SILVER: Complete Profile GOLD + Custom URL + 50 Skills + Job
@@ -755,7 +779,7 @@
                 </li>
               </ul>
             </div>
-            <button class="cart-continue-btn">
+            <button class="cart-continue-btn" onclick="cartstandard()">
               Continue
               <span>
                 <svg
@@ -774,7 +798,7 @@
             <button class="cart-compare-btn">Compare Pakages</button>
           </div>
           <div id="premium" data-tab-content>
-            <h2>₹2,932</h2>
+            <h2 id="cart-premium-price">₹2,932</h2>
             <p>Save up to 5% with Subscribe to Save</p>
             <p>
               DIAMOND: Personal & Business Page SILVER for Personal Profile +
@@ -899,7 +923,7 @@
                 </li>
               </ul>
             </div>
-            <button class="cart-continue-btn">
+            <button class="cart-continue-btn" id="cart-premium-price" onclick="cartpremium()">
               Continue
               <span>
                 <svg
@@ -920,10 +944,15 @@
         </div>
       </div>
     </div>
+    <!-- faq -->
+    <div id="cart-page-faq"></div>
     <!-- footer -->
     <div id="footer"></div>
   </body>
 </html>
+
+
+
 <script src="../script/cart.js"></script>
 
 <!-- footer -->
@@ -933,4 +962,13 @@
 
   document.getElementById("cartnavbar").innerHTML = navbar_imp();
   document.getElementById("footer").innerHTML = footer();
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+      $( function ()
+    {
+        $( "#cart-page-faq" ).load( "graphic-design-faq.html" );
+    } );
 </script>

@@ -36,7 +36,7 @@
 }
 .cart-continue-btn {
   width: 100%;
-  background-color: green;
+  background-color: #1dbf73;
   color: white;
   padding: 12px;
   padding-bottom: 10px;
@@ -91,7 +91,7 @@
 #cartTitle {
   width: 95%;
   margin: auto;
-  border-bottom: 1px solid lightgray;
+  /* border-bottom: 1px solid lightgray; */
 }
 #cartAbout {
   margin-bottom: 20px;
@@ -111,6 +111,30 @@
   border-bottom: 1px solid lightgray;
 }
 
-.cartFill{
+.cartFill {
   fill: #1dbf73;
+}
+#cartComparePackage table tbody {
+  text-align: center;
+}
+#cartComparePackage table tr {
+  height: 50px;
+}
+#cartComparePackage table tr td {
+  border: 1px solid #efeff0;
+}
+#cartComparePackage table {
+  border: 1px solid lightpink;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.class-green {
+  color: white;
+  background-color: #1dbf73;
+  border: transparent;
+  padding: 2px 20px;
+  border-radius: 5px;
+}
+#cartComparePackage table > tbody tr:nth-child(odd) {
+  background-color: #fafafa;
 }
