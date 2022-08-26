@@ -11,6 +11,7 @@ footer {
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid lightgray;
+  /* background-color: white; */
 }
 footer > div > ul > li > a {
   text-decoration: none;

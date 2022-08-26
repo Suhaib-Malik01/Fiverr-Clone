@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Card</title>
     <link rel="stylesheet" href="../style/login_card.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footer.css">
     <style>
+        body {
+            background-color:rgb(248, 248, 248);
+        }
         #signupCard {
-            height: 480px;
+            height: 590px;
+            margin-top: 100px;
+            margin-bottom: 300px;
+            background-color: white;
         }
         #forgot_pw {
             margin-top: -4px;
             padding-left: 30px;
             font-size: 13px;
             color: #62646A;
+        }
+        #join > p {
+            font-size: 13px;
         }
         #join > input {
             width: 88%;
@@ -35,6 +46,8 @@
     </style>
 </head>
 <body>
+    <div id="topsec"></div>
+
     <div id="signupCard">
         <div id="form_inp">
             <h2>Join Fiverr</h2>
@@ -53,9 +66,12 @@
                 Continue with Apple
             </button> </br>
             <h5>OR</h5>
-            <form action="" id="join">
+            <form action="" id="signin">
                 <input type="text" id="email" placeholder="Email/ Username">
-                <input type="submit" value="Continue" onclick="refer()">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="pw" placeholder="Set Password"> </br>
+                <p>8 characters or longer. Combine upper and lowercase letters and numbers.</p>
+                <input type="submit" value="Continue" onclick="sign_up()">
             </form>
         </div>
 
@@ -68,7 +84,22 @@
                 <u style="color:#1dbf73">Sign In</u></p>
         </div>
     </div>
+
+    <div id="footer"></div>
 </body>
 </html>
 
 <script src="../script/signup_login.js"></script>
+
+<script type="module">
+    import navbar_imp from '../components/navbar_exp.js'
+    let container = document.getElementById('topsec');
+    container.innerHTML = navbar_imp();
+</script>
+
+<script type="module">
+    import {footer} from "../script/footer.js"
+
+    document.getElementById("footer").innerHTML = footer()
+
+</script>
