@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  margin-left: 90px;
+  color: #404145;
+}
+.parent {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.child {
+  position: relative;
+  z-index: 0;
+  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none;
+}
+
+.child img {
+  height: 350px;
+  width: 100%;
+}
+
+.child img:hover {
+  opacity: 0.9;
+}
+
+.left-btn {
+  position: absolute;
+  z-index: 1;
+  left: 10;
+  display: inline-block;
+  border: none;
+  transition: all 300ms ease;
+  padding: 3px 10px;
+}
+
+.right-btn {
+  position: absolute;
+  z-index: 2;
+  right: 50;
+  display: inline-block;
+  border: none;
+  margin-left: -30px;
+  transition: all 300ms ease;
+  padding: 5px 12px;
+}
+button {
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 100%;
+  color: gray;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* button:hover{
+        background-color: white;
+        color: black;
+      } */
+.text {
+  position: absolute;
+  top: 0;
+  padding-left: 25px;
+  color: white;
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+}
