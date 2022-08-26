@@ -23,14 +23,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
   width: 330px;
-  height: 520px;
+  height: 470px;
   text-align: center;
   padding: 20px;
 }
 .fb {
   margin: auto;
   width: 90%;
-  padding: 15px;
+  padding: 20px;
   background-color: #4267b2;
   color: white;
   fill: white;
@@ -39,6 +39,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   display: flex;
+  align-items: center;
   gap: 30px;
   padding-left: 20px;
 }
@@ -52,6 +53,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   display: flex;
+  align-items: center;
   gap: 30px;
   padding-left: 20px;
 }
@@ -65,7 +67,8 @@ body {
   font-size: 16px;
   font-weight: 600;
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 40px;
   padding-left: 20px;
 }
 #signin > input {

@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Card</title>
     <link rel="stylesheet" href="../style/login_card.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footer.css">
+
+    <style>
+        body {
+            background-color:rgb(248, 248, 248);
+        }
+        #signupCard {
+            margin-top: 90px;
+            margin-bottom: 200px;
+            height: 500px;
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
+    <div id="topsec"></div>
+
     <div id="signupCard">
         <div id="form_inp">
             <h2>Sign In to Fiverr</h2>
@@ -27,7 +43,7 @@
             </button> </br>
             <h5>OR</h5>
             <form action="" id="signin">
-                <input type="text" id="email" placeholder="Email/ Username">
+                <input type="text" id="username" placeholder="Username">
                 <input type="password" id="pw" placeholder="Password"> </br>
                 <input type="submit" value="Continue" onclick="login()">
             </form>
@@ -45,9 +61,22 @@
             <p>Not a member yet? <u style="color:#1dbf73">Join Now</u></p>
         </div>
     </div>
+
+    <div id="footer"></div>
 </body>
 </html>
 
 <script src="../script/signup_login.js"></script>
 
-<!-- Hello There! -->
+<script type="module">
+    import navbar_imp from '../components/navbar_exp.js'
+    let container = document.getElementById('topsec');
+    container.innerHTML = navbar_imp();
+</script>
+
+<script type="module">
+    import {footer} from "../script/footer.js"
+
+    document.getElementById("footer").innerHTML = footer()
+
+</script>

@@ -4,13 +4,17 @@ body{
 }
 #navbar {
     margin: auto;
-    border-bottom: #74767e 1px solid;
+    border-bottom: #c9cacc 1px solid;
     display: flex;
     height: 80px;
     gap: 35px;
     align-items: center;
     justify-content: center;
     color: #62646a;
+    background-color: white;
+}
+#navbar > h4 {
+    cursor: pointer
 }
 #search {
     padding: 5px;
@@ -62,15 +66,17 @@ body{
 }
 
 .dropdown {
-    border-bottom: #74767e 1px solid;
+    border-bottom: #c9cacc 1px solid;
     color: #74767e;
     height: 45px;
     text-align: center;
+    background-color: white;
 }
 .dropdown > ul {
     display: inline-flex;
     list-style: none;
     gap:40px;
+    cursor: pointer
 }
 
 #ele1 {
