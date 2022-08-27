@@ -18,6 +18,9 @@ subtotal.innerText = stotal;
 let total = document.getElementById("total");
 total.innerText = ftotal;
 
+let title = document.getElementById("title");
+title.innerText = data.title;
+
 let selectqty = () => {
   qty = +document.getElementById("qty").value;
   console.log(qty);
@@ -34,6 +37,8 @@ let selectqty = () => {
   total.innerText = ftotal;
 };
 
+
 let checkout = () =>{
     window.location.href = "paymentgateway.html"
 }
+
