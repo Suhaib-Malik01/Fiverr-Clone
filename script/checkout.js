@@ -35,5 +35,5 @@ let selectqty = () => {
 };
 
 let checkout = () =>{
-    window.location.href = "paymentgetway.html"
+    window.location.href = "paymentgateway.html"
 }

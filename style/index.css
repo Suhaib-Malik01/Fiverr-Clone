@@ -29,8 +29,12 @@ span {
   margin-top: 5px;
   align-items: center;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 
-#navbar-list > button {
+#navbar-list >a button {
   padding: 6px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -41,7 +45,7 @@ span {
   border-radius: 5px;
 }
 
-#navbar-list > button:hover {
+#navbar-list >a button:hover {
   background-color: #1dbf73;
   color: white;
   border: 1px solid #1dbf73;
@@ -1724,7 +1728,7 @@ span {
 
 .second-banner-image-boss {
   color: #fff;
-  width: 90%;
+  width: 1400px;
   margin: auto;
   position: relative;
   margin-top: 40px;

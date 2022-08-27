@@ -19,21 +19,23 @@ tabs.forEach((tab) => {
 
 let data = JSON.parse(localStorage.getItem("Data"));
 
-let dataprice = data.price.split("₹").join("");
+let dataprice = data.price;
 dataprice = data.price.split(",").join("");
+dataprice = dataprice.split("₹").join("");
 
 let basicPrice = +dataprice;
+
 let standardPrice = +dataprice * 2;
 let premiumPrice = +dataprice * 3;
 
 let basic = document.getElementById("cart-basic-price");
-basic.innerText = basicPrice;
+basic.innerText = "₹"+ basicPrice;
 
 let standard = document.getElementById("cart-standard-price");
-standard.innerText = standardPrice;
+standard.innerText = "₹"+ standardPrice;
 
 let premium = document.getElementById("cart-premium-price");
-premium.innerText = premiumPrice;
+premium.innerText = "₹"+ premiumPrice;
 
 // now for the cart page title
 let title = document.getElementById("title");
