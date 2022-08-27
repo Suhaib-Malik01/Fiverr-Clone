@@ -41,14 +41,14 @@ body{
 #navbar > input,button{
     height: 30px;
 }
-#navbar > img {
+.logo {
     height: 35%;
 }
 #signup {
     background-color: white;
     font-weight: 600;
     color: #1dbf73;
-    width: 60px;
+    width: 65px;
     border-radius: 5px;
     border: 1px solid #1dbf73;
     font-size: 15px;

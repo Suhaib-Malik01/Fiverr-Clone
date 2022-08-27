@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Status</title>
+</head>
+<body>
+    <div id="status">
+        <img id="image" src="https://gifimage.net/wp-content/uploads/2018/04/progress-gif.gif" alt="loding">
+        <h3 id="status">Please Wait</h3>
+    </div>
+</body>
+</html>
+
+
+<script>
+    function getData() {
+        let result = JSON.parse(localStorage.getItem('verification'));
+        return result;
+        console.log(result);
+    }
+
+    let myPromise = new Promise(function(resolve,reject){
+        let data  = false;
+
+        setTimeout(function (){
+            data = true;
+
+            if (data) {
+                document.querySelector("#image").src = "https://cdn.dribbble.com/users/1751799/screenshots/5512482/check02.gif";
+                document.getElementById('status') = "Transaction Success";
+            } else {
+                alert("Transaction Failed!")
+            }
+        },4000)
+    })
+</script>

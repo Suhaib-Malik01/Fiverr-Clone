@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../style/paymentgateway.css">
+    <style>
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topsec {
+            border-bottom: 1px solid rgb(212, 212, 212);
+        }
+        .topsec p {
+            color: black;
+            font-size: 20px;
+        }
+        .topsec div{
+            margin: auto;
+            width: 70%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 18px;
+            color: #b5b6ba;
+        }
+        .topsec div img {
+            margin-top: -1%;
+            margin-right: 20px;
+            height: 35%;
+        }
+        #cir_no {
+            font-size: 18px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border: 1px solid #1dbf73;
+            border-radius: 50px;
+            background-color: #1dbf73;
+            color: white;
+        }
+        #timer {
+            margin-top: 3%;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: -2%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="topsec">
+
+
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1200px-Fiverr_Logo_09.2020.svg.png" alt="">
+        <h4 style="color:#1dbf73;"> <span id="cir_no">1</span> Order Details</h4>
+        <p>></p>
+        <h4 style="color:#1dbf73;"> <span id="cir_no">2</span> Confirm and Pay</h4>
+        <p>></p>
+        <h4> <span id="cir_no">3</span> Submit Requirments</h4>
+    </div>
+</div>
+
+<div id="timer"></div>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="Enter Email">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="Adress/Street">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="City Name">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="State">
+                    </div>
+                    <div class="inputBox">
+                        <span>Pin code :</span>
+                        <input type="text" placeholder="Pin" id="pin">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="../components/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Enter Card Name">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month(01-Jan/ 12-Dec) :</span>
+                    <input type="text" placeholder="10">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn" onclick="checkData()">
+
+    </form>
+
+</div>    
+    
+</body>
+</html>
+
+<script>
+    function countdownTimeStart(){
+    
+    let minstoadd = 5;
+    var currentDate = new Date();
+    var countDownDate = new Date( currentDate.getTime() + minstoadd*60000);
+    
+    var x = setInterval(function() {
+    
+        var now = new Date().getTime();
+    
+        
+        var distance = countDownDate - now;
+        
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById("timer").innerHTML = "Expires in: " + "0"+minutes+" : "+ seconds;
+        
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+    }
+
+    window.onload = countdownTimeStart();
+
+
+
+
+    
+    function checkData() {
+        let check = document.getElementById("pin").value;
+
+        if (check == "1111"){
+            localStorage.setItem("verification",JSON.stringify(true))
+        } else {
+            localStorage.setItem("verification",JSON.stringify(false))
+        }
+
+    }
+    </script>
