@@ -108,26 +108,29 @@ function footer() {
   <!-- social links -->
   <div id="socialLinks">
     <a href="https://twitter.com/fiverr">
-      <i class="fa-brands fa-2x fa-twitter"></i>
+    <img src="../graphic design img/twitter.png"/>
     </a>
     <a href="https://www.facebook.com/Fiverr/">
-      <i class="fab fa-2x fa-facebook"></i>
+ <img src="../graphic design img/facebook.png"/>
     </a>
     <a href="https://www.linkedin.com/company/fiverr-com/">
-      <i class="fa-brands fa-2x fa-linkedin"></i>
+    <img src="../graphic design img/linkedin.png"/>
     </a>
     <a href="https://www.pinterest.com/fiverr/">
-      <i class="fab fa-2x fa-pinterest"></i>
+    <img src="../graphic design img/pinterest.png"/>
     </a>
     <a href="https://www.instagram.com/fiverr/">
-      <i class="fa-brands fa-2x fa-instagram"></i>
+    <img src="../graphic design img/instagram.png"/>
     </a>
     <a href="">
-      <i class="fa-solid fa-globe"></i>
+      <i class="fa-solid"></i>
       <span>English</span>
     </a>
     <a href="#">
       <span>₹ INR</span>
+    </a>
+    <a href="#">
+          <img src="../graphic design img/human.png"/>
     </a>
   </div>
 </div>`;

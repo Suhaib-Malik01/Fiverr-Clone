@@ -3,11 +3,12 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-h1 {
+.first-slider-heading {
   margin-left: 90px;
   color: #404145;
+  margin-top: 100px;
 }
-.parent {
+.first-slider-parent {
   width: 90%;
   margin: auto;
   position: relative;
@@ -17,7 +18,7 @@ h1 {
   height: 400px;
 }
 
-.child {
+.first-slider-parent-child {
   position: relative;
   z-index: 0;
   width: 20%;
@@ -26,36 +27,36 @@ h1 {
   display: none;
 }
 
-.child img {
+.first-slider-parent-child img {
   height: 350px;
   width: 100%;
 }
 
-.child img:hover {
+.first-slider-parent-child img:hover {
   opacity: 0.9;
 }
 
-.left-btn {
+.first-slider-parent-left-btn {
   position: absolute;
   z-index: 1;
-  left: 10;
+  left: 0;
   display: inline-block;
   border: none;
   transition: all 300ms ease;
   padding: 3px 10px;
 }
 
-.right-btn {
+.first-slider-parent-right-btn {
   position: absolute;
   z-index: 2;
-  right: 50;
+  right: 0;
   display: inline-block;
   border: none;
   margin-left: -30px;
   transition: all 300ms ease;
   padding: 5px 12px;
 }
-button {
+.first-slider-parent-right-btn, .first-slider-parent-left-btn{
   font-size: 25px;
   cursor: pointer;
   font-weight: bold;
@@ -65,11 +66,7 @@ button {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* button:hover{
-        background-color: white;
-        color: black;
-      } */
-.text {
+.first-slider-parent-text {
   position: absolute;
   top: 0;
   padding-left: 25px;
