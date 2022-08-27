@@ -4,14 +4,25 @@
   margin-top: 20px;
 }
 #price-summery {
-  width: 30%;
-  border: 1px solid;
-  padding: 10px;
+  width: 400px;
+  padding: 10px 15px;
+  height: 400px;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 #checkout-product-details {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
+  padding: 10px 15px;
+  font-size: 19px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .span-block {
   display: inline-block;
@@ -43,16 +54,28 @@
   border-radius: 5px;
   background-color: #1dbf73;
   color: white;
+  transition: 300ms;
+  font-size: 16px;
+  font-weight: 600;
+}
+#checkout-btn:hover{
+  background-color: #178a54;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform .1s
+  
 }
 
 /* top nav */
 
 body {
   margin: 0px;
+
   font-family: Arial, Helvetica, sans-serif;
 }
 .topsec {
   border-bottom: 1px solid rgb(212, 212, 212);
+  padding: 0px 50px;
 }
 .topsec p {
   color: black;

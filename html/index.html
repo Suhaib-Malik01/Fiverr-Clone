@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fiverr - Freelance Services Marketplace</title>
     <link rel="stylesheet" href="../style/footer.css" />
     <link rel="stylesheet" href="../style/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- <link rel="stylesheet" href="../style/navbar.css"> -->
 </head>
 <style>
@@ -45,8 +48,8 @@
             <li>English</li>
             <li>₹ INR</li>
             <li>Become a Seller</li>
-            <li>Sign in</li>
-            <button>Join</button>
+            <a href="./login.html"><li>Sign in</li></a>
+            <a href="./signup_card.html"><button>Join</button></a>
         </ul>
     </div>
     <div id="Image-box">
@@ -80,6 +83,20 @@
         <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/paypal.ec56157.png" alt="">
     </div>
 
+        <!-- ====================================================   =================================================== -->
+        
+        <!-- Home page slider container -->
+        
+        <!-- ====================================================   =================================================== -->
+
+        <div id="homepage-first-slider"></div>
+
+        <script>
+               $( function ()
+                {
+                    $( "#homepage-first-slider" ).load( "homepage_first_slider.html" );
+                } );
+        </script>
     
             <!-- ====================================================   =================================================== -->
     
@@ -164,7 +181,7 @@
                     <div id="fade" onClick="lightbox_close();"></div>
     
                     <div>
-                        <a href="#" class="video-anchor-tag" onclick="lightbox_open();">
+                        <a href="#light" id="video-anchor-tag" onclick="lightbox_open();">
                             <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_900,dpr_2.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png"
                                 alt="Fiver image" width="700" height="450" />
                             <img class="video-icon" src="../graphic design img/play.png" alt="" />
@@ -327,142 +344,280 @@
     
             <!-- ====================================================   =================================================== -->
     
-            <div class="this-is-big-video-slider-slideshow-container">
     
-                <div class="this-is-big-video-slider-mySlides this-is-big-video-slider-fade">
+        <div class="this-is-big-video-slider-slideshow-container">
+            <div class="this-is-big-video-slider-mySlides this-is-big-video-slider-fade">
+                <div id="light1">
+                    <a class="this-is-big-video-slider-boxclose" id="this-is-big-video-slider-boxclose"
+                        onclick="lightbox_close1();"></a>
+                    <video id="VisaChipCardVideo1" width="800" controls>
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/bsncmkwya3nectkensun"
+                            type="video/mp4" />
+                    </video>
+                </div>
+                <div id="this-is-big-video-slider-fade" onClick="lightbox_close1();"></div>
     
-                    <div id="light1">
-                        <a class="this-is-big-video-slider-boxclose" id="this-is-big-video-slider-boxclose"
-                            onclick="lightbox_close1();"></a>
-                        <video id="VisaChipCardVideo1" width="800" controls>
-                            <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/bsncmkwya3nectkensun"
-                                type="video/mp4" />
-                        </video>
+                <div>
+                    <a href="#thisisvideoplay1" id="thisisvideoplay1" class="video-anchor-tag" onclick="lightbox_open1();">
+                        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173395/testimonial-video-still-haerfest.jpg"
+                            alt="Fiver image" width="40%" />
+                        <img class="this-is-big-video-slider-video-icon1" src="../graphic design img/play.png" alt="" />
+                    </a>
+                    <div class="this-is-big-video-slider-side-text1">
+                        Tim and Dan Joo, Co-Founders
+                        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/haerfest-logo-x2.03fa5c5.png"
+                            alt="upper image 1" />
                     </div>
-                    <div id="this-is-big-video-slider-fade" onClick="lightbox_close1();"></div>
-    
-                    <div>
-                        <a href="#" class="video-anchor-tag" onclick="lightbox_open1();">
-                            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173395/testimonial-video-still-haerfest.jpg"
-                                alt="Fiver image" width="40%" />
-                            <img class="this-is-big-video-slider-video-icon" src="../graphic design img/play.png" alt="" />
-                        </a>
-                        <div class="this-is-big-video-slider-side-text" style="margin: -230px; margin-left: 600px;">Tim and
-                            Dan Joo, Co-Founders
-                            <img style="margin-bottom: -7px; width: 100px;"
-                                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/haerfest-logo-x2.03fa5c5.png"
-                                alt="upper image 1">
-                        </div>
-                        <div class="this-is-big-video-slider-side-description-text">"When you want to create a business
-                            bigger than
-                            yourself you neecd a lot ofhelp. That's what Fiver
-                            does."</div>
+                    <div class="this-is-big-video-slider-side-description-text1">
+                        "When you want to create a business bigger than yourself you neecd a
+                        lot ofhelp. That's what Fiver does."
                     </div>
                 </div>
-    
-                <div class="this-is-big-video-slider-mySlides this-is-big-video-slider-fade">
-    
-                    <div id="light2">
-                        <a class="this-is-big-video-slider-boxclose" id="this-is-big-video-slider-boxclose"
-                            onclick="lightbox_close2();"></a>
-                        <video id="VisaChipCardVideo2" width="800" controls>
-                            <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/plfa6gdjihpdvr10rchl"
-                                type="video/mp4" />
-                        </video>
-                    </div>
-                    <div id="this-is-big-video-slider-fade" onClick="lightbox_close2();"></div>
-    
-                    <div>
-                        <a href="#" class="video-anchor-tag" onclick="lightbox_open2();">
-                            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173414/testimonial-video-still-naadam.jpg"
-                                alt="Fiver image" width="40%" />
-                            <img class="this-is-big-video-slider-video-icon" src="../graphic design img/play.png" alt="" />
-                        </a>
-    
-                        <div class="this-is-big-video-slider-side-text">Caitlin Tormey, Chief Commercial Oficer
-                            <img style="margin-bottom: -15px; width: 100px;"
-                                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/naadam-logo-x2.0a3b198.png"
-                                alt="upper image 2">
-                        </div>
-                        <div class="this-is-big-video-slider-side-description-text">"We've used Fiverr for Shopify web
-                            development,
-                            graphie design, and backend web development.
-                            Working with Fiverr makes myjob a little easier
-                            every day."</div>
-                    </div>
-                </div>
-    
-    
-                <div class="this-is-big-video-slider-mySlides this-is-big-video-slider-fade">
-    
-                    <div id="light3">
-                        <a class="this-is-big-video-slider-boxclose" id="this-is-big-video-slider-boxclose"
-                            onclick="lightbox_close3();"></a>
-                        <video id="VisaChipCardVideo3" width="800" controls>
-                            <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/yja2ld5fnolhsixj3xxw "
-                                type="video/mp4" />
-                        </video>
-                    </div>
-                    <div id="this-is-big-video-slider-fade" onClick="lightbox_close3();"></div>
-    
-                    <div>
-                        <a href="#" class="video-anchor-tag" onclick="lightbox_open3();">
-                            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173396/testimonial-video-still-lavender.jpg"
-                                alt="Fiver image" width="40%" />
-                            <img class="this-is-big-video-slider-video-icon" src="../graphic design img/play.png" alt="" />
-                        </a>
-                        <div class="this-is-big-video-slider-side-text">Brighid Gannon (DNP, PMHNP-BC), Co-Founder <img
-                                style="margin-bottom: -9px; width: 100px;"
-                                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lavender-logo-x2.89c5e2e.png"
-                                alt=""> </div>
-                        <div class="this-is-big-video-slider-side-description-text">"We used Fiverr for SEO, our logo,
-                            website, copy,
-                            animated oideos - literally everything. It was like
-                            working with a human right next to you versus
-                            being across the vorld."</div>
-                    </div>
-                </div>
-    
-                <div class="this-is-big-video-slider-mySlides this-is-big-video-slider-fade">
-                    <div id="light4">
-                        <a class="this-is-big-video-slider-boxclose" id="this-is-big-video-slider-boxclose"
-                            onclick="lightbox_close4();"></a>
-                        <video id="VisaChipCardVideo4" width="800" controls>
-                            <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/rb8jtakrisiz0xtsffwi"
-                                type="video/mp4" />
-                        </video>
-                    </div>
-                    <div id="this-is-big-video-slider-fade" onClick="lightbox_close4();"></div>
-    
-                    <div>
-                        <a href="#" class="video-anchor-tag" onclick="lightbox_open4();">
-                            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173399/testimonial-video-still-rooted.jpg"
-                                alt="Fiver image" width="40%" />
-                            <img class="this-is-big-video-slider-video-icon" src="../graphic design img/play.png" alt="" />
-                        </a>
-                        <div class="this-is-big-video-slider-side-text" style="margin: -312px; margin-left: 600px;">Kay Kim,
-                            Co-Founder
-                            <img style="margin-bottom: -15px; width: 100px;"
-                                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/rooted-logo-x2.321d79d.png"
-                                alt="">
-                        </div>
-                        <div class="this-is-big-video-slider-side-description-text">"Tt's extremely exciting that Fiverr has
-                            freelancers
-                            from all over the aworld - it broadens the talent pool.
-                            One of the best things about Fiverr is that while
-                            we're sleeping, soneone's working."</div>
-                    </div>
-                </div>
-    
-                <a class="this-is-big-video-slider-side-prev-btn" onclick="plusSlides(-1)">❮</a>
-                <a class="this-is-big-video-slider-side-next-btn" onclick="plusSlides(1)">❯</a>
-    
             </div>
-            <br>
     
+            <div class="this-is-big-video-slider-mySlides this-is-big-video-slider-fade">
+                <div id="light2">
+                    <a class="this-is-big-video-slider-boxclose" id="this-is-big-video-slider-boxclose"
+                        onclick="lightbox_close2();"></a>
+                    <video id="VisaChipCardVideo2" width="800" controls>
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/plfa6gdjihpdvr10rchl"
+                            type="video/mp4" />
+                    </video>
+                </div>
+                <div id="this-is-big-video-slider-fade" onClick="lightbox_close2();"></div>
     
-   
+                <div>
+                    <a href="#thisisvideoplay2" id="thisisvideoplay2" class="video-anchor-tag" onclick="lightbox_open2();">
+                        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173414/testimonial-video-still-naadam.jpg"
+                            alt="Fiver image" width="40%" />
+                        <img class="this-is-big-video-slider-video-icon2" src="../graphic design img/play.png" alt="" />
+                    </a>
     
+                    <div class="this-is-big-video-slider-side-text2">
+                        Caitlin Tormey, Chief Commercial Oficer
+                        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/naadam-logo-x2.0a3b198.png"
+                            alt="upper image 2" />
+                    </div>
+                    <div class="this-is-big-video-slider-side-description-text2">
+                        "We've used Fiverr for Shopify web development, graphie design, and
+                        backend web development. Working with Fiverr makes myjob a little
+                        easier every day."
+                    </div>
+                </div>
+            </div>
+    
+            <div class="this-is-big-video-slider-mySlides this-is-big-video-slider-fade">
+                <div id="light3">
+                    <a class="this-is-big-video-slider-boxclose" id="this-is-big-video-slider-boxclose"
+                        onclick="lightbox_close3();"></a>
+                    <video id="VisaChipCardVideo3" width="800" controls>
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/yja2ld5fnolhsixj3xxw "
+                            type="video/mp4" />
+                    </video>
+                </div>
+                <div id="this-is-big-video-slider-fade" onClick="lightbox_close3();"></div>
+    
+                <div>
+                    <a href="#thisisvideoplay3" id="thisisvideoplay3" class="video-anchor-tag" onclick="lightbox_open3();">
+                        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173396/testimonial-video-still-lavender.jpg"
+                            alt="Fiver image" width="40%" />
+                        <img class="this-is-big-video-slider-video-icon3" src="../graphic design img/play.png" alt="" />
+                    </a>
+                    <div class="this-is-big-video-slider-side-text3">
+                        Brighid Gannon (DNP, PMHNP-BC), Co-Founder
+                        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lavender-logo-x2.89c5e2e.png"
+                            alt="" />
+                    </div>
+                    <div class="this-is-big-video-slider-side-description-text3">
+                        "We used Fiverr for SEO, our logo, website, copy, animated oideos -
+                        literally everything. It was like working with a human right next to
+                        you versus being across the vorld."
+                    </div>
+                </div>
+            </div>
+    
+            <div class="this-is-big-video-slider-mySlides this-is-big-video-slider-fade">
+                <div id="light4">
+                    <a class="this-is-big-video-slider-boxclose" id="this-is-big-video-slider-boxclose"
+                        onclick="lightbox_close4();"></a>
+                    <video id="VisaChipCardVideo4" width="800" controls>
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/rb8jtakrisiz0xtsffwi"
+                            type="video/mp4" />
+                    </video>
+                </div>
+                <div id="this-is-big-video-slider-fade" onClick="lightbox_close4();"></div>
+    
+                <div>
+                    <a href="#thisisvideoplay4" id="thisisvideoplay4" class="video-anchor-tag" onclick="lightbox_open4();">
+                        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173399/testimonial-video-still-rooted.jpg"
+                            alt="Fiver image" width="40%" />
+                        <img class="this-is-big-video-slider-video-icon4" src="../graphic design img/play.png" alt="" />
+                    </a>
+                    <div class="this-is-big-video-slider-side-text4">
+                        Kay Kim, Co-Founder
+                        <img style="margin-bottom: -15px; width: 100px"
+                            src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/rooted-logo-x2.321d79d.png"
+                            alt="" />
+                    </div>
+                    <div class="this-is-big-video-slider-side-description-text4">
+                        "Tt's extremely exciting that Fiverr has freelancers from all over
+                        the aworld - it broadens the talent pool. One of the best things
+                        about Fiverr is that while we're sleeping, soneone's working."
+                    </div>
+                </div>
+            </div>
+    
+            <a class="this-is-big-video-slider-side-prev-btn" onclick="plusSlides(-1)">❮</a>
+            <a class="this-is-big-video-slider-side-next-btn" onclick="plusSlides(1)">❯</a>
+        </div>
+ 
+    <!-- ====================================================   =================================================== -->
+    
+    <!-- first banner home page -->
+    
+    <!-- ====================================================   =================================================== -->
+    
+<div class="first-banner-image-boss">
+    <img class="home-page-first-banner1"
+        src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1160,dpr_1.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png"
+        alt="">
+    <div class="first-banner-all-text">
+        <p class="first-banner-text-p1"> <strong>fiverr</strong> <span class="first-banner-span">logo maker</span></p>
+        <!-- <br> -->
+        <p class="first-banner-text-p2"> <strong>Make an incredible logo</strong> </p>
+        <!-- <br> -->
+        <p class="first-banner-text-p3"> <i>in minutes</i> </p>
+        <!-- <br> -->
+        <p class="first-banner-text-p4">Pre-designed by top talent. Just add your touch.</p>
+
+        <!-- <br> -->
+        <button class="first-banner-button">Try Fiverr Logo Maker</button>
+    </div>
+</div>
+    
+
+<!-- ====================================================   =================================================== -->
+
+<!-- this is second slider on home page -->
+
+<!-- ====================================================   =================================================== -->
+
+
+<div class="homepage-second-slider-text">
+    <p>
+        Get inspired with projects made by our freelancers
+    </p>
+    <a href="#">See More Projects &gt;</a>
+</div>
+<div class="homepage-second-slider" data-flickity='{ "groupCells": true,"wrapAround": true }'>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615077/eveeelin.jpeg"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615068/mijalzagier.png"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/d51cf66f8a7026eb56a8c8e6b6793b24-1617027896306/lamonastudio-img.png"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615063/bruno_malagrino.png"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615096/passionshake.jpeg"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615069/noneyn.png"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615084/fernandobengua.png"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615106/skydesigner.png"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/aa2ff6a65708e858cd563bedbc1f9e48-1617004762616/spickex.jpeg"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615063/annapietrangeli.jpeg"
+            alt="">
+    </div>
+    <div class="carousel-cell">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615082/christophbrandl.png"
+            alt="">
+    </div>
+</div>
+
+
+<div class="Graphics-Design-Related-Guides">
+    <div class="graphic-guides-header">
+        <h2 class="grafic-guides-h2">Graphics & Design Related Guides</h2>
+        <div class="anchor-tag">
+            <a class="graphic-guides-anchor" href="#">See more guides </a>
+            <span class="symbol">&#x003E;</span>
+        </div>
+    </div>
+
+    <div class="graphic-guides-card-boss">
+        <div class="graphic-guides-card">
+            <img class="img-grafic-guides-card"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560157/guide-start-online-business-552-x2.png"
+                alt="graphic-guides-img" />
+            <a class="graphic-guides-anchor-card" href="#">Start an online business and work from home
+                A complete guide to starting a small business online</a>
+        </div>
+        <div class="graphic-guides-card">
+            <img class="img-grafic-guides-card"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560168/guide-digital-marketing-552-x2.png"
+                alt="graphic-guides-img" />
+            <a class="graphic-guides-anchor-card" href="#">Digital marketing made easy
+                A practical guide to understand what is digital marketing</a>
+        </div>
+        <div class="graphic-guides-card">
+            <img class="img-grafic-guides-card"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560155/guide-create-a-logo-552-x2.png"
+                alt="graphic-guides-img" />
+            <a class="graphic-guides-anchor-card" href="#">Create a logo for your business
+                A step-by-step guide to create a memorable business logo
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- ====================================================   =================================================== -->
+    
+    <!-- second banner home page -->
+    
+    <!-- ====================================================   =================================================== -->
+
+            <div class="second-banner-image-boss">
+                <img class="home-page-second-banner1"
+                    src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_1.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608122/bg-signup-1400-x1.png"
+                    alt="">
+                <div class="second-banner-all-text">
+                    <p class="second-banner-text-p1"> <strong>Find the <em>talent</em> needed to </strong></p>
+            
+                    <p class="second-banner-text-p2"> <strong> <em>get</em> your business <em>growing</em>.</strong> </p>
+            
+            
+                    <button class="second-banner-button">Get Started</button>
+                </div>
+            </div>
+
+
+
+
+
+
     <link rel="stylesheet" href="../style/index.css" />
     
     <script src="../script/index.js"></script>

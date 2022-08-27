@@ -37,6 +37,8 @@ let selectqty = () => {
   total.innerText = ftotal;
 };
 
-let checkout = () => {
-  window.location.href = "paymentgetway.html";
-};
+
+let checkout = () =>{
+    window.location.href = "paymentgateway.html"
+}
+
