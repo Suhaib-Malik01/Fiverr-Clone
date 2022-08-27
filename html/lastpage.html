@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Status</title>
+    <style>
+        #status {
+            margin: auto;
+            border: 1px solid blue;
+            width: 40%;
+            text-align: center;
+        }
+        #status > img {
+            width: 20%;
+        }
+    </style>
 </head>
 <body>
     <div id="status">
@@ -30,7 +41,6 @@
 
             if (data) {
                 document.querySelector("#image").src = "https://cdn.dribbble.com/users/1751799/screenshots/5512482/check02.gif";
-                document.getElementById('status') = "Transaction Success";
             } else {
                 alert("Transaction Failed!")
             }
