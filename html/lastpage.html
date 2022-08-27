@@ -8,19 +8,20 @@
     <style>
         #status {
             margin: auto;
-            border: 1px solid blue;
-            width: 40%;
+            width: 30%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-        }
-        #status > img {
-            width: 20%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
     </style>
 </head>
 <body>
     <div id="status">
-        <img id="image" src="https://gifimage.net/wp-content/uploads/2018/04/progress-gif.gif" alt="loding">
-        <h3 id="status">Please Wait</h3>
+        <img id="image" src="https://cdn.dribbble.com/users/2077073/screenshots/6005120/loadin_gif.gif" alt="">
     </div>
 </body>
 </html>
@@ -30,20 +31,24 @@
     function getData() {
         let result = JSON.parse(localStorage.getItem('verification'));
         return result;
-        console.log(result);
+        // console.log(result);
     }
 
     let myPromise = new Promise(function(resolve,reject){
-        let data  = false;
+        let data  = getData();
 
         setTimeout(function (){
             data = true;
 
             if (data) {
-                document.querySelector("#image").src = "https://cdn.dribbble.com/users/1751799/screenshots/5512482/check02.gif";
+                document.querySelector("#image").src = "https://lh3.googleusercontent.com/o7cQZcdZEp6XE3yb-MSqwWfcTvG3YBTqWEqmLGW6vnxQBugYx4HHfXJm8YlVEoobYfOWUMu-INiNUAGSVRvTtUzX8m-xjMmG9cPo0A1zqwx9BssvR3cl2ycd95NgpqW5BMFwjjoG10YDw84DZsfjHp8Bqc5bXGoJGk8h_mL1gxVR2xqPpXTr4JllW-WlR77iYziSZw6LWppR78ggd06Wwjv-Hy-kKBoEdBJ3w2u1iER7uhXnPOu6VovnOI1OBroaT4N4D0KIajmz8C63z8pgA55t4Evb9j9Kfgz2QZF5Ik3eApTTYUP2FIv6Wkg-t7AH6vY1dGyCeMve9AWmOso0wLzuW7EnFvhwzvTBcJUC-rgHyO3cLSiYhBkVgVOds1PCDKJeHjFQlcp_qvsC0JxxLY-6nMouGb8j7Z0HOLhLvLVwAAG1oi2xF7KKEXqsHFF-KMys1L-kkOM0Rr7FVIgqv3VLDoHTqX2nYltNGoffcxP9ufzY4zQmvGFL6hMT8TWk43VSbKtVPgomJGJfDPT1nURKhQhc0cl6HesWmGZP_BLOILOB4f_m6J_ucm57ICIDZRIlSXQXNyrimJPA88Trslbgh1GbK0jTRjo_hR6wHPq6nDymquUNAfhwsAsqDxqFdWmYi4wg5nkqSWzInKNTBFub1npGrtkl08lFMWACrQDpfuQmuH0pbdH8GfqcRB8cx6X0uS4ortM0Lw9j5-mvLfeRC6MooN4rIbeOSpqZEwbEtNbJ2ajuu5Vu8XrSl4xKsAG8-aAm3NvMYkQB0WPGqU4J1Pt8vF-h=s640-no?authuser=0";
+
+                window.location.href = './Homepage-after-login.html'
             } else {
-                alert("Transaction Failed!")
+                document.querySelector("#image").src = "https://lh3.googleusercontent.com/2wao7F6zlTf_gsthi1ooLR1vphirfvmi9a8U-bTOmxgxRaG51YWB1QEOEScyzJ-r7EhvjSGoitxDgFY4mv4jhOHUwgCfBadlOWvZ-BqvU0G3qqczlQWx9WFUkGI23JAb---8sBM-3nzNOoaQON7G3RGREpb-XqtykMLWLR_osd1rU5BWTYjBNioeaCfRRxmw4gRdprZqQ6cljGdVdLK6NVyXKwqYFSR03VskXYhxagunacMGjg2HZVkIRaUyrCbI5C4qFl_Ru80wBoDx-p5WDrEI30oGDIWLCNI6rKorzUmAs-xlQdGFInA7SCtC3FrKMvj4we-o7Gy8cYySDKZxCrPpiRsRytG_Nv3aEYPlgsun-oFXCvdPxr5rhPIcWkG5PCtp1y3em8hZ8lXIRrKSGSEdhdGZcQ7kG5xBrMSCs5CiRcVp9eWywf1ejztaCeUjrxdh6aXV1B40nRzXzFYzLPb9BbGu6uO7YbIpDUUaSpRhZV-46dc3-NsFFF64hL51mPHx_jyVp8_CJgrjqK6hM4-4uPX-CAXsRjkeUmusFUbQ9s0rGLx0NIrtk9xDk8SJ-zL0AKy-ilRiABfhQmj2k1Va0FT6wjpS_D8rTzsYpOkFEYtWd2bKUVt5tvb7UMEkAHEN64aI_1B3ZaZcCW56f-5AQLiVZeadO8OItadRaNkbVOomy4k1VCsHhypYDUl78t0sbnvbrSCbUShUucDmT56osr723c4tv_JLZkx69Yznv0n2IKw3QcXPknLw5yCvx-bP95Evz-KICZx9d_rEYJy6kIwfEvm5=s640-no?authuser=0";
+
+                window.location.href = './cart.html'
             }
-        },4000)
+        },2000)
     })
 </script>
