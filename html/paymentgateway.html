@@ -187,13 +187,16 @@
 
     
     function checkData() {
+        event.preventDefault()
         let check = document.getElementById("pin").value;
 
         if (check == "1111"){
             localStorage.setItem("verification",JSON.stringify(true))
+            
+            
         } else {
             localStorage.setItem("verification",JSON.stringify(false))
         }
-
+        window.location.href = "lastpage.html"
     }
     </script>
