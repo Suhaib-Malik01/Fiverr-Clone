@@ -1,0 +1,84 @@
+.flex-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#price-summery {
+  width: 30%;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+#checkout-product-details {
+  display: flex;
+  justify-content: space-between;
+}
+.span-block {
+  display: inline-block;
+}
+.fill-rating {
+  fill: gold;
+}
+.flex-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#checkout-product-details > div img {
+  width: 200px;
+}
+#product-quntity {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+#box {
+  width: 90%;
+  margin: auto;
+  color: #404145;
+}
+#checkout-btn {
+  margin-top: 20px;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1dbf73;
+  color: white;
+}
+
+/* top nav */
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topsec {
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+.topsec p {
+  color: black;
+  font-size: 20px;
+}
+.topsec div {
+  width: 70%;
+  height: 80px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  color: #b5b6ba;
+}
+.topsec div img {
+  margin-top: -1%;
+  margin-right: 20px;
+  height: 35%;
+}
+#cir_no {
+  font-size: 18px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #1dbf73;
+  border-radius: 50px;
+  background-color: #1dbf73;
+  color: white;
+}

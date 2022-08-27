@@ -5,21 +5,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
+    <link rel="stylesheet" href="/assorted-desk-4504/style/checkout.css" />
+    <link rel="stylesheet" href="/assorted-desk-4504/style/footer.css" />
   </head>
   <body>
-    <div id="price-summery"></div>
+    <!-- top nav-->
+    <div class="topsec">
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1200px-Fiverr_Logo_09.2020.svg.png"
+          alt=""
+        />
+        <h4 style="color: #1dbf73"><span id="cir_no">1</span> Order Details</h4>
+        <p>></p>
+        <h4><span id="cir_no">2</span> Confirm and Pay</h4>
+        <p>></p>
+        <h4><span id="cir_no">3</span> Submit Requirments</h4>
+      </div>
+    </div>
+
+    <div class="flex-div" id="box">
+      <!-- left Side -->
+      <div id="checkout-leftside">
+        <div>
+          <div id="checkout-product-details" class="flex-div">
+            <div>
+              <img src="" alt="" id="image" />
+            </div>
+            <div>
+              <h3>I will design flat minimalist logo design</h3>
+              <div class="span-block fill-rating">
+                <svg
+                  class="fit-svg-icon full_star yellow"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                >
+                  <path
+                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                  ></path>
+                </svg>
+                <svg
+                  class="fit-svg-icon full_star yellow"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                >
+                  <path
+                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                  ></path>
+                </svg>
+                <svg
+                  class="fit-svg-icon full_star yellow"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                >
+                  <path
+                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                  ></path>
+                </svg>
+                <svg
+                  class="fit-svg-icon full_star yellow"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                >
+                  <path
+                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                  ></path>
+                </svg>
+                <svg
+                  class="fit-svg-icon full_star yellow"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                >
+                  <path
+                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                  ></path>
+                </svg>
+                <span><b>4.9</b></span>
+                <p>(17334 reviews)</p>
+              </div>
+            </div>
+            <div id="product-quntity">
+              <label for="">Qty</label>
+              <select name="" id="qty" onchange="selectqty()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <b>Great Choice!</b> This seller has an exceptional number of repeat
+            buyers.
+          </p>
+        </div>
+        <!-- <div id="extra-product">
+          <div>
+            <h2>Upgrade your order with extras</h2>
+          </div>
+          <div>
+            <div>
+              <input type="checkbox" id="" name="vehicle1" value="Bike">
+            </div>
+            <div>
+                <b>1259</b>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- rightside -->
+      <div id="price-summery">
+        <h1>Price Summery</h1>
+        <div class="flex-price">
+          <div>Subtotal</div>
+          <div>₹<span id="subtotal"></span></div>
+        </div>
+        <div class="flex-price">
+          <div>Service Fee</div>
+          <div>₹<span id="tax">250.00</span></div>
+        </div>
+        <div class="flex-price">
+          <div><b>Total</b></div>
+          <div>
+            <b>₹<span id="total"></span></b>
+          </div>
+        </div>
+        <div class="flex-price">
+          <div>Delivery Time</div>
+          <div>1 day</div>
+        </div>
+        <button id="checkout-btn" onclick="checkout()">
+          Continue to Checkout
+        </button>
+        <p>You won't be charged yet</p>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
   </body>
 </html>
-<script>
-  let data = JSON.parse(localStorage.getItem(""));
 
-  let priceSummery = () => {
-    let box = document.getElementById("price-summery");
+<script type="module">
+  import { footer } from "../script/footer.js";
 
-    let title = document.createElement("h1");
-    title.innerText = "Price Summery";
-
-    box.append(title);
-  };
-  priceSummery()
+  document.getElementById("footer").innerHTML = footer();
 </script>
+
+<script src="/assorted-desk-4504/script/checkout.js"></script>
