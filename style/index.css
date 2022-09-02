@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar,
@@ -213,7 +214,7 @@ a{
 #home-page-video-container {
   display: flex;
   justify-content: baseline;
-  width: 90%;
+  width: 72%;
   margin: auto;
   margin-top: 100px;
 }
@@ -283,14 +284,14 @@ a{
   font-weight: 700;
   color: #404145;
   margin-bottom: 30px;
-  margin-left: 80px;
+  margin-left: 290px;
 }
 
 .explore-marketplace-container-child {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
-  width: 90%;
+  width: 72%;
   text-align: center;
   margin: auto;
   margin-bottom: 40px;
@@ -299,13 +300,24 @@ a{
 .explore-marketplace-anchor-tag {
   text-decoration: none;
   color: #404145;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .explore-marketplace-anchor-tag img {
   width: 48px;
   height: 48px;
+  padding: 0px 0px 6px 0px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid gray;
+  transition: 0.2s;
 }
+
+.explore-marketplace-anchor-tag img:hover {
+  padding: 0px 20px 6px 20px;
+  border-bottom: 2px solid #1dbf73;
+}
+
 
 .blue-background-area-container {
   background-color: #0d084d;
@@ -1616,10 +1628,13 @@ a{
 .graphic-guides-header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin-left: 3%;
 }
 
 .anchor-tag {
   display: flex;
+  margin-right: 2%;
 }
 
 .grafic-guides-h2 {
@@ -1662,15 +1677,16 @@ a{
   font-weight: bold;
   font-size: 20px;
   color: blue;
-  margin-top: 30px;
+  margin-top: 32px;
+  margin-left: 4px;
 }
 
 .graphic-guides-card-boss {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 90%;
-  margin: auto;
+  width: 94%;
+  margin-left: 7%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1699,7 +1715,7 @@ a{
 }
 
 .img-grafic-guides-card {
-  width: 450px;
+  width: 100%;
   margin-bottom: 20px;
 }
 

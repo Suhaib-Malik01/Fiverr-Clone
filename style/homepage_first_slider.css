@@ -7,9 +7,10 @@ body {
   margin-left: 90px;
   color: #404145;
   margin-top: 100px;
+  margin-left: 265px;
 }
 .first-slider-parent {
-  width: 90%;
+  width: 72%;
   margin: auto;
   position: relative;
   display: flex;
@@ -25,6 +26,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   display: none;
+  transition: 0.3s;
 }
 
 .first-slider-parent-child img {

@@ -27,7 +27,7 @@ let login = () => {
 
   let username = document.getElementById("username").value;
   let password = document.getElementById("pw").value;
-
+  
   let signup = JSON.parse(localStorage.getItem("signup_data")) || [];
 
   if (signup.username == username && signup.password == password) {
@@ -86,6 +86,11 @@ let sign_up = () => {
   let email = document.getElementById("email").value;
   let username = document.getElementById("username").value;
   let password = document.getElementById("pw").value;
+  if (password.length<8){
+    alert("Please Enter Valid Password")
+    window.location.reload()
+    return
+  }
 
 //_____________________________IGNORE THIS PART______________________________
   // let name = "sample";

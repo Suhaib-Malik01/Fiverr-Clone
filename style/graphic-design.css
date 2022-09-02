@@ -170,12 +170,16 @@ h3 {
 
 .anchor-tag {
   display: flex;
+  align-items: center;
+  margin-right: 5%;
+  gap: 5px;
+  
 }
 
 .grafic-guides-h2 {
   color: #404145;
   font-weight: 700;
-  margin-left: 70px;
+  margin-left: 5%;
 }
 
 .graphic-guides-anchor {
@@ -244,7 +248,7 @@ h3 {
 }
 
 .img-grafic-guides-card {
-  width: 450px;
+  width: 100%;
   margin-bottom: 20px;
 }
 

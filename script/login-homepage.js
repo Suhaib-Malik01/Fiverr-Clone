@@ -1,7 +1,7 @@
 let container = document.getElementById("Products")
 let src_container = document.getElementById("Search-box")
 let result = document.getElementById("result-for")
-document.getElementById("Logout").addEventListener("click",function(){
+document.getElementById("Logout").addEventListener("click", function () {
     localStorage.removeItem("curr_user");
     window.location.href = "index.html"
 })
@@ -14,7 +14,7 @@ function display(arr) {
 var body = document.body,
     html = document.documentElement;
 
-var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 console.log(height)
 
 let button = document.getElementById("button-crousel");
@@ -171,8 +171,8 @@ pr3_btn[1].onclick = () => {
         if (pr3_count == 1) { item.style.left = "-132%" }
         if (pr3_count > 1) { pr3_count = 1 };
     }
-    
-    
+
+
 }
 pr3_btn[0].onclick = () => {
     pr3_count--;
@@ -181,7 +181,7 @@ pr3_btn[0].onclick = () => {
         if (pr3_count == 1) { item.style.left = "-150%" }
         if (pr3_count < 0) { pr3_count = 0 };
     }
-    
+
 }
 
 
@@ -249,13 +249,13 @@ let data1 = [{
     title: "I will paint a digital illustration",
     rating: "5.0",
     price: "₹1,679"
-}, {
-    img: "https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/107092562/original/b318c1fadc29d6197a3abe955e72f0cde9f8c4ea.png",
-    prImg: "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/profile/photos/60018964/original/bear_pp.png",
-    prtitle: "ivankristianto",
-    title: "I will design a custom illustration for you",
+},{
+    img: "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/166517304/original/b05ee86d12b5fdf35bb67a27838c42a1a23b9825.jpeg",
+    prImg: "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/studio/profile_photo/131045a4b61177dfb80427b7cc56cc2a-1595608241899/concept%202.jpg",
+    prtitle: "indillustudio",
+    title: "Our studio will illustrated and layout your children book",
     rating: "5.0",
-    price: "₹840"
+    price: "₹19,288"
 }, {
     img: "https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/151504727/original/95bea31785f840dd57f5ec5d8db59fc478e471cc.png",
     prImg: "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/66f515f77ff63289cbed53db49fd053b-1660055915598/14b39ec2-da10-42d8-b35b-53ccec6e60bf.jpg",
@@ -354,12 +354,12 @@ let data2 = [{
     price: "₹30,289"
 },
 {
-    img: "https://fiverr-res.cloudinary.com/video/upload/t_gig_cards_web/yu8ulrdxaxgfmfoa8w4i.png",
-    prImg: "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/5600ca44bf65abf52de7cb7d57328452-1652170795062/6c1650b0-19a2-44a6-91a4-ee6683d54f15.jpg",
-    prtitle: "a_moneer",
-    title: "I will make pixel art backgrounds and landscapes animated too",
+    img: "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/226203565/original/3e6094c25cab8f8687469ff583a97d4392386084.png",
+    prImg: "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/5482182d6c541a1a0d51eede4c69d4ac-1585842655848/2a3398e9-fceb-4088-9149-dc4255cab858.jpg",
+    prtitle: "pentakie",
+    title: "I will make your fantasy map for rpg, novels and games",
     rating: "5.0",
-    price: "₹8,389"
+    price: "₹10,063"
 },
 {
     img: "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/213613878/original/671b6c88e70a9a857a0f529fd51928ec9ebc2a1f.png",
@@ -1043,16 +1043,16 @@ document.getElementById("name-2").innerText = userData.username
 
 
 function Search() {
-    
+
     let new_data = []
     let value = document.getElementById("Search").value;
     data1.forEach(ele => {
-        if (ele.title.includes(value)){
+        if (ele.title.includes(value)) {
             new_data.push(ele)
         }
 
     })
-    if (new_data.length>0 && value!=""){
+    if (new_data.length > 0 && value != "") {
         result.innerHTML = `Result for "<span id="Search-value">${value}</span>"`
         document.getElementById("pr-btn3-right").style.top = "1880px"
         document.getElementById("pr-btn3-left").style.top = "1880px"
@@ -1062,10 +1062,10 @@ function Search() {
         document.getElementById("right-btn-hand").style.top = "4400px";
         displaySearch1(new_data)
 
-    }else{
+    } else {
         alert(`No Result For ${value}`)
     }
-    
+
 }
 
 

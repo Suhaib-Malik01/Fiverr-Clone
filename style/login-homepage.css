@@ -327,8 +327,8 @@ h4 {
     margin: auto;
     margin-right: 1%;
     gap: 20px;
-    overflow-y: auto;
-    overflow-x: hidden
+    overflow-x: scroll;
+    overflow-y: hidden;
 
 }
 
@@ -677,7 +677,6 @@ section+h2 {
     position: relative;
     left: 0;
     min-width: 20%;
-    height: 400px;
     transition: 0.3s;
 
 }

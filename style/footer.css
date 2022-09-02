@@ -1,13 +1,15 @@
 #footer {
   margin-top: 50px;
+  border-top: 1px solid lightgray;
 }
 footer {
-  width: 90%;
-  border-top: 1px solid lightgray;
+  width: 85%;
+  
   display: flex;
   justify-content: center;
   gap: 70px;
   font-size: 16px;
+  margin: auto;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid lightgray;
@@ -40,9 +42,10 @@ footer > div > ul > li > h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 40px;
-  margin-top: 20px;
+  margin: auto;
+  width: 80%;
 }
+
 #footerLogo {
   display: flex;
   justify-content: center;

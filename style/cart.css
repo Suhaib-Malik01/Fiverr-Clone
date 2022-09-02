@@ -31,20 +31,21 @@ a {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
   text-align: center;
 }
 
 .tab {
   cursor: pointer;
   padding: 16px;
+  font-weight: bold
 
 }
 
 .tab.active {
   background-color: white;
   /* text-decoration: underline red solid; */
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #1dbf73;
   width: 200px;
   text-align: center;
 }
@@ -65,7 +66,7 @@ a {
   margin: auto;
   height: 40px;
   justify-content: space-between;
-  padding-left: 230px;
+  padding-left: 43.5%;
   font-weight:600 ;
   transition: 300ms;
   
@@ -87,10 +88,11 @@ a {
 
 .cart-compare-btn {
   width: 100%;
-  margin: 10px 0px;
+  margin: 2% 0px;
   border: none;
   height: 30px;
-  background-color: rgb(242, 242, 242);
+  font-weight: bold;
+  background-color: rgb(238, 238, 238);
   border-radius: 10px;
 }
 
@@ -115,12 +117,15 @@ a {
   width: 70%;
   /* height: 100%; */
   /* border: 1px solid; */
+  margin: auto;
 }
 
 #contener {
+  width: 90%;
   display: flex;
+  margin: auto;
   gap: 50px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   color: #62646a;
 }
 
@@ -146,9 +151,10 @@ a {
 }
 
 #cartAbout {
-  width: 1200px;
+  
   margin: 30px 0px;
   text-align: justify;
+  
   /* border-bottom: 1px solid lightgray; */
 }
 
