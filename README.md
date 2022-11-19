@@ -8,6 +8,7 @@
 
 
 # Fiverr Clone
+[(CLICK HERE) netlify url (my show security error due to a payment page simulation. Don't worry it is 100% safe.)](https://fiverr-clone-22.netlify.app/)
 
 This is a replication of one of the most popular website for finding products and services offered by some of the worlds best talents.
 
